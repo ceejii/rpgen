@@ -20,7 +20,7 @@
 	var s;
 	var t;
 	
-	var arketyplista = ["donare", "krigare", "ledare", "lard", "mystiker", "skugga", "underhallare"];
+	var arketyplista = ["donare", "krigare", "ledare", "lard", "magiker", "mystiker", "skugga", "underhallare"];
 	
     //var arketyplista = ["donare", "krigare", "ledare"];
 	//var arketyplista = ["donare"];
@@ -938,6 +938,243 @@
 	underhallare.subval[1][7][0].beskrivning="4T6×3 silver."
 	underhallare.subval[1][7][0].beskrivningvaldbas="pengar_resultat silver."
 	
+
+	var magiker = {};
+	magiker.subval = [[[]]];
+	magiker.vald = 0;
+   	arketypobjekt.magiker=magiker;
+	magiker.rubrik = "Magiker";
+	magiker.namn = "magiker";
+	
+	magiker.beskrivning="I begynnelsen var världen en plats av fred och harmoni. Prästerskapet böjde knä inför Daak och var kärlen för hans godhet. Men ett frö av avund slog rot bland de som åtrådde prästerskapets makt. De slöt en pakt med Malgoarh och denne gav dem förmågan att bruka magi. De fick makten de sökte men blev samtidigt lurade. Kraften var inte menad för	dödliga och själva skapelsen slets sönder och ut vällde farsoter, demoner och galenskap. <br/>	– Ur Syndarnas bok.";
+
+	magiker.subval[0][0][0] = {};
+	magiker.subval[0][0][0].valdasub = [];
+	magiker.subval[0][0][0].vald = 0;
+	magiker.subval[0][0][0].intrigerillgarningar = 1; 
+	magiker.subval[0][0][0].svartkonstsammanslutningar = 2;
+	magiker.subval[0][0][0].beskrivningtabeller = [["1 slag på Intriger \& illgärningar"],["2 slag på Svartkonst \& sammanslutningar"]];
+	magiker.subval[0][0][0].kunskapsfardigheterenheter = 4;
+	magiker.subval[0][0][0].mystikfardigheterenheter=10;
+	magiker.subval[0][0][0].valfriaenheter = 6;
+	magiker.subval[0][0][0].beskrivningenheter=[["4 enheter Kunskapsfärdigheter"],["10 enheter Mystikfärdigheter"],["6 valfria enheter"]];
+	
+	magiker.subval[0].push([]);
+	magiker.subval[0][1][0] = {};
+	magiker.subval[0][1][0].valdasub = [];
+	magiker.subval[0][1][0].vald = 0;
+	magiker.subval[0][1][0].vanligtvapen = 1;
+	magiker.subval[0][1][0].rubrik="Beväpning"
+	magiker.subval[0][1][0].beskrivning="Ett vanligt vapen."
+	
+	magiker.subval[0].push([]);
+	magiker.subval[0][2][0] = {};
+	magiker.subval[0][2][0].valdasub = [];
+	magiker.subval[0][2][0].vald = 0;
+	//TODO: Tilldela till färdigheten förnimma
+	//magiker.subval[0][2][0].expertispoang = 1;
+	magiker.subval[0][2][0].rubrik="Omstöpt"
+	magiker.subval[0][2][0].beskrivning="2T6 i Förnimma"
+	
+	magiker.subval[0].push([]);
+	magiker.subval[0][3][0] = {};
+	magiker.subval[0][3][0].valdasub = [];
+	magiker.subval[0][3][0].vald = 0;
+	magiker.subval[0][3][0].lattrustning = 1;
+	magiker.subval[0][3][0].rubrik="Ritualutrustning"
+	magiker.subval[0][3][0].beskrivning="Ritualutrustning värd 50 silver. Se respektive aspekt."
+	magiker.subval[0][3][0].heligaforemal=1; //TODO: Är detta rätt?
+	
+	magiker.subval[0].push([]);
+	magiker.subval[0][4][0] = {};
+	magiker.subval[0][4][0].valdasub = [];
+	magiker.subval[0][4][0].vald = 0;
+	magiker.subval[0][4][0].rubrik="Formler"
+	magiker.subval[0][4][0].beskrivning="4 Mysterier från en eller flera formelsamlingar"
+	magiker.subval[0][4][0].mysterier=4;
+	
+	magiker.subval[0].push([]);
+	magiker.subval[0][5][0] = {};
+	magiker.subval[0][5][0].valdasub = [];
+	magiker.subval[0][5][0].vald = 0;
+	magiker.subval[0][5][0].lattrustning = 1;
+	magiker.subval[0][5][0].rubrik="Språk"
+	magiker.subval[0][5][0].beskrivning="2 språkenheter"
+	magiker.subval[0][5][0].sallsyntvapen=4;//TODO: applicera språkenheter
+	
+	
+	magiker.subval.push([[]]);
+	magiker.subval[1][0][0]  = {};
+	magiker.subval[1][0][0].valdasub = [];
+	magiker.subval[1][0][0].vald = 0;
+	magiker.subval[1][0][0].antalsubval=2;
+	magiker.subval[1][0][0].valdasub=[];
+
+	magiker.subval[1].push([]);
+	magiker.subval[1][1][0] = {};
+	magiker.subval[1][1][0].valdasub = [];
+	magiker.subval[1][1][0].vald = 0;
+	magiker.subval[1][1][0].avtrubbningovernaturligt=1;
+	magiker.subval[1][1][0].avtrubbningutsatthet=1;
+	magiker.subval[1][1][0].rubrik="Avtrubbning"
+	magiker.subval[1][1][0].beskrivning="2 Avtrubbningskryss för övernaturligt."
+	
+	magiker.subval[1].push([]);
+	magiker.subval[1][2][0] = {};
+	magiker.subval[1][2][0].valdasub = [];
+	magiker.subval[1][2][0].vald = 0;
+	magiker.subval[1][2][0].medelrustning=1;
+	magiker.subval[1][2][0].ovanligtvapen=1;
+	magiker.subval[1][2][0].rubrik="Beväpning"
+	magiker.subval[1][2][0].beskrivning="Ett ovanligt vapen samt en helrustning i något av följande material: härdat läder \(Belastning 16, Pansar 5/6/5\), nitläder \(Belastning 16, Pansar 6/6/4\), ringläder \(Belastning 16, Pansar 7/5/4\), fjällpansar \(Belastning 24, Pansar 10/8/6\), lamellpansar \(Belastning 24, Pansar 10/6/8\) eller ringbrynja \(Belastning 24, Pansar 12/4/8\)."
+	
+	
+	magiker.subval[1].push([]);
+	magiker.subval[1][3][0] = {};
+	magiker.subval[1][3][0].valdasub = [];
+	magiker.subval[1][3][0].vald = 0;
+	magiker.subval[1][3][0].mysterier=2;//TODO: Lägg till i ytterligare formler
+	magiker.subval[1][3][0].rubrik="Formler"
+	magiker.subval[1][3][0].beskrivning="Ytterligare 2 inlärda mysterier samt tillgång till ytterligare 2 mysterier som ännu inte är inlärda."
+	
+	
+	magiker.subval[1].push([]);
+	magiker.subval[1][4][0] = {};
+	magiker.subval[1][4][0].valdasub = [];
+	magiker.subval[1][4][0].vald = 0;
+	magiker.subval[1][4][0].heligaforemal=1;//TODO: Separat kategori?
+	magiker.subval[1][4][0].rubrik="Kongelat"
+	magiker.subval[1][4][0].beskrivning="8 valfria kongelerade filament med magnitud 4."
+	
+	
+	magiker.subval[1].push([]);
+	magiker.subval[1][5][0] = {};
+	magiker.subval[1][5][0].valdasub = [];
+	magiker.subval[1][5][0].vald = 0;
+	magiker.subval[1][5][0].rubrik="Täckmantel";
+	magiker.subval[1][5][0].hantverkpoang=1
+	magiker.subval[1][5][0].beskrivning="1 poäng i ett hantverk som täckmantel. Inkluderar även möjlighet att utöva hantverk, t.ex. genom medlemskap i ett gille."
+	
+	
+	magiker.subval[1].push([]);
+	magiker.subval[1][6][0] = {};
+	magiker.subval[1][6][0].valdasub = [];
+	magiker.subval[1][6][0].vald = 0;
+	magiker.subval[1][6][0].rubrik="Medlem i ett magisällskap"
+	magiker.subval[1][6][0].beskrivning="Magikern har starka kopplingar till ett magisällskap. Välj och anteckna konsekvenserna av detta. Inkluderar viss status och förtrogenhet med doktriner inom sällskapet."
+	magiker.subval[1][6][0].antalsubval=1;
+	
+	magiker.subval[1][6].push();
+	magiker.subval[1][6][1] = {};
+	magiker.subval[1][6][1].valdasub = [];
+	magiker.subval[1][6][1].vald = 0;
+	magiker.subval[1][6][1].rubrik="Amaltea"
+	magiker.subval[1][6][1].begravningsriter = {}; //TODO: lägg till nåt passande...
+	magiker.subval[1][6][1].beskrivning="Amaltea."
+	
+	magiker.subval[1][6].push();
+	magiker.subval[1][6][2] = {};
+	magiker.subval[1][6][2].valdasub = [];
+	magiker.subval[1][6][2].vald = 0;
+	magiker.subval[1][6][2].rubrik="Azkanns lie"
+	magiker.subval[1][6][2].beskrivning="Azkanns lie."
+	
+	magiker.subval[1][6].push();
+	magiker.subval[1][6][3] = {};
+	magiker.subval[1][6][3].valdasub = [];
+	magiker.subval[1][6][3].vald = 0;
+	magiker.subval[1][6][3].rubrik="Brutna cirkelns sällskap"
+	magiker.subval[1][6][3].beskrivning="Brutna cirkelns sällskap."
+	
+	magiker.subval[1][6].push();
+	magiker.subval[1][6][4] = {};
+	magiker.subval[1][6][4].valdasub = [];
+	magiker.subval[1][6][4].vald = 0;
+	magiker.subval[1][6][4].rubrik="Chabeiska kätteriet"
+	magiker.subval[1][6][4].beskrivning="Chabeiska kätteriet."
+	
+	magiker.subval[1][6].push();
+	magiker.subval[1][6][5] = {};
+	magiker.subval[1][6][5].valdasub = [];
+	magiker.subval[1][6][5].vald = 0;
+	magiker.subval[1][6][5].rubrik="Dramatikerna från Shayar"
+	magiker.subval[1][6][5].beskrivning="Dramatikerna från Shayar."
+	
+	magiker.subval[1][6].push();
+	magiker.subval[1][6][6] = {};
+	magiker.subval[1][6][6].valdasub = [];
+	magiker.subval[1][6][6].vald = 0;
+	magiker.subval[1][6][6].rubrik="Gråkapporna"
+	magiker.subval[1][6][6].beskrivning="Gråkapporna."
+	
+	magiker.subval[1][6].push();
+	magiker.subval[1][6][7] = {};
+	magiker.subval[1][6][7].valdasub = [];
+	magiker.subval[1][6][7].vald = 0;
+	magiker.subval[1][6][7].rubrik="Luffarmagikerna"
+	magiker.subval[1][6][7].beskrivning="Luffarmagikerna."
+	
+	magiker.subval[1][6].push();
+	magiker.subval[1][6][8] = {};
+	magiker.subval[1][6][8].valdasub = [];
+	magiker.subval[1][6][8].vald = 0;
+	magiker.subval[1][6][8].rubrik="Natthovet"
+	magiker.subval[1][6][8].beskrivning="Natthovet."
+	
+	magiker.subval[1][6].push();
+	magiker.subval[1][6][9] = {};
+	magiker.subval[1][6][9].valdasub = [];
+	magiker.subval[1][6][9].vald = 0;
+	magiker.subval[1][6][9].rubrik="Santimarexorden (Damarien)"
+	magiker.subval[1][6][9].beskrivning="Santimarexorden (Damarien)."
+	
+	magiker.subval[1][6].push();
+	magiker.subval[1][6][10] = {};
+	magiker.subval[1][6][10].valdasub = [];
+	magiker.subval[1][6][10].vald = 0;
+	magiker.subval[1][6][10].rubrik="Sista flammans väktare"
+	magiker.subval[1][6][10].beskrivning="Sista flammans väktare."
+	
+	magiker.subval[1][6].push();
+	magiker.subval[1][6][11] = {};
+	magiker.subval[1][6][11].valdasub = [];
+	magiker.subval[1][6][11].vald = 0;
+	magiker.subval[1][6][11].rubrik="Skimrande vägen"
+	magiker.subval[1][6][11].tortyr = {}; //TODO: Specialregel om infiltration, tillåt ett ytterligare val?
+	magiker.subval[1][6][11].beskrivning="Skimrande vägen."
+	
+	magiker.subval[1][6].push();
+	magiker.subval[1][6][12] = {};
+	magiker.subval[1][6][12].valdasub = [];
+	magiker.subval[1][6][12].vald = 0;
+	magiker.subval[1][6][12].rubrik="Tolesce"
+	magiker.subval[1][6][12].beskrivning="Tolesce."
+	
+	magiker.subval[1][6].push();
+	magiker.subval[1][6][13] = {};
+	magiker.subval[1][6][13].valdasub = [];
+	magiker.subval[1][6][13].vald = 0;
+	magiker.subval[1][6][13].rubrik="Vinterträdet"
+	magiker.subval[1][6][13].beskrivning="Vinterträdet."
+	
+	
+	magiker.subval[1].push([]);
+	magiker.subval[1][7][0] = {};
+	magiker.subval[1][7][0].valdasub = [];
+	magiker.subval[1][7][0].vald = 0;
+	magiker.subval[1][7][0].rubrik="Utmärkt ritualutrustning"
+	magiker.subval[1][7][0].beskrivning="Ritualimplement till ett totalt värde av 200 silver."
+	
+
+	magiker.subval[1].push([]);
+	magiker.subval[1][8][0] = {};
+	magiker.subval[1][8][0].valdasub = [];
+	magiker.subval[1][8][0].vald = 0;
+	magiker.subval[1][8][0].pengarslag="4T6x5"; // 4T6*3
+	magiker.subval[1][8][0].rubrik="Pengar"
+	magiker.subval[1][8][0].beskrivning="4T6×5 silver."
+	magiker.subval[1][8][0].beskrivningvaldbas="pengar_resultat silver."
+	
 	
 
 	var arketypobjektlista=[];
@@ -972,6 +1209,7 @@
     arketypobjektlista[4]=mystiker;
     arketypobjektlista[5]=skugga;
     arketypobjektlista[6]=underhallare;
+    arketypobjektlista[7]=magiker;
  	
     
     

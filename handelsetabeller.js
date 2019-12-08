@@ -1,7 +1,7 @@
 ﻿function hamta_handelsetabellista(){
 	handelsetabellista={};
-	handelsetabellista.namn=["farderaventyr", "intrigerillgarningar", "kunskapmysterier", "striderdrabbningar"];
-	handelsetabellista.rubrik=["Färder \& äventyr", "Intriger \& illgärningar", "Kunskap \& mysterier", "Strider \& drabbningar"];
+	handelsetabellista.namn=["farderaventyr", "intrigerillgarningar", "kunskapmysterier", "striderdrabbningar", "svartkonstsammanslutningar"];
+	handelsetabellista.rubrik=["Färder \& äventyr", "Intriger \& illgärningar", "Kunskap \& mysterier", "Strider \& drabbningar", "Svartkonster \& sammanslutningar"];
 	return handelsetabellista
 }
 
@@ -9069,7 +9069,2142 @@ function hamta_handelsetabeller(){
 	
     // --- //
     
+	handelsetabeller.svartkonstsammanslutningar = [];
     
+    handelsetabeller.svartkonstsammanslutningar[0] = {};    
+    handelsetabeller.svartkonstsammanslutningar[0].subval = [[[]]];    
+    handelsetabeller.svartkonstsammanslutningar[0].vald = 0;    
+    handelsetabeller.svartkonstsammanslutningar[0].rubrik="Svartkonst \& sammanslutningar";
+	handelsetabeller.svartkonstsammanslutningar[0].namn="svartkonstsammanslutningar";
+	
+	handelsetabeller.svartkonstsammanslutningar[1] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[1].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[1].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[1].rubrik = "Analytiskt sinne"
+	handelsetabeller.svartkonstsammanslutningar[1].beskrivning = "Rollpersonen har ett analytiskt sinne och är snabbtänkt och kalkylerande."
+	handelsetabeller.svartkonstsammanslutningar[1].beskrivninghak = "\+1T6 Psyke. Lättlärd i Kalkylera. Expertisen Logik 4T6. 2 enheter Kunskapsfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[1].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[1].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[1].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[1].subval[0][0][0].kunskapsfardigheterenheter = 2; 
+	handelsetabeller.svartkonstsammanslutningar[1].subval[0][0][0].kalkylera = {};
+	handelsetabeller.svartkonstsammanslutningar[1].subval[0][0][0].kalkylera.lattlard=1; 
+	handelsetabeller.svartkonstsammanslutningar[1].subval[0][0][0].psyke = {};
+	handelsetabeller.svartkonstsammanslutningar[1].subval[0][0][0].psyke.varde = 4; 
+	handelsetabeller.svartkonstsammanslutningar[1].subval[0][0][0].logik = {};
+	handelsetabeller.svartkonstsammanslutningar[1].subval[0][0][0].logik.enheter = 3; 
+
+	handelsetabeller.svartkonstsammanslutningar[2] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[2].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[2].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[2].rubrik = "Apokryfiska kunskaper"
+	handelsetabeller.svartkonstsammanslutningar[2].beskrivning = "Rollpersonen har kunskap om passager i religiösa skrifter som denne kan utnyttja för att nå djupare insikter samt att övertala och kontrollera personer."
+	handelsetabeller.svartkonstsammanslutningar[2].beskrivninghak = "Lättlärd i Teologi. I situationer där rollpersonen använder Fokus för Sociala färdigheter eller Kunskapsfärdigheter och knyter detta till religion så får denne ytterligare \+1T6 bonus"
+	handelsetabeller.svartkonstsammanslutningar[2].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[2].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[2].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[2].subval[0][0][0].teologi = {};
+	handelsetabeller.svartkonstsammanslutningar[2].subval[0][0][0].teologi.lattlard=1; 
+	handelsetabeller.svartkonstsammanslutningar[2].subval[0][0][0].formaga="I situationer där rollpersonen använder Fokus för Sociala färdigheter eller Kunskapsfärdigheter och knyter detta till religion så får denne ytterligare \+1T6 bonus på grund av sina apokryfiska kunskaper."
+
+	handelsetabeller.svartkonstsammanslutningar[3] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[3].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[3].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[3].rubrik = "Arvinge"
+	handelsetabeller.svartkonstsammanslutningar[3].beskrivning = "Rollpersonen är arvtagare till en omsjungen hjälte och har höga förväntningar på sig. Vad anfadern eller anmodern var känd får spelaren och spelledaren bestämma i samråd."
+	handelsetabeller.svartkonstsammanslutningar[3].beskrivninghak = "4 valfria enheter att placera ut på färdigheter som är knutna till släktens rykte"
+	handelsetabeller.svartkonstsammanslutningar[3].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[3].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[3].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[3].subval[0][0][0].valfriaenheter=4; 
+	handelsetabeller.svartkonstsammanslutningar[3].subval[0][0][0].ovrigt="Arvtagare till en omsjungen hjälte."
+
+	handelsetabeller.svartkonstsammanslutningar[4] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[4].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[4].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[4].rubrik = "Asketiskt liv"
+	handelsetabeller.svartkonstsammanslutningar[4].beskrivning = "Rollpersonen har levt ett asketiskt och disciplinerat liv under en tid för att kunna fokusera på en särskild framtida uppgift. Spelaren bestämmer vad denna uppgift är för något."
+	handelsetabeller.svartkonstsammanslutningar[4].beskrivninghak = "2 valfria enheter knutna till den framtida uppgiften. \+1T6 Självkontroll"
+	handelsetabeller.svartkonstsammanslutningar[4].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[4].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[4].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[4].subval[0][0][0].valfriaenheter=2; 
+	handelsetabeller.svartkonstsammanslutningar[4].subval[0][0][0].sjalvkontroll = {};
+	handelsetabeller.svartkonstsammanslutningar[4].subval[0][0][0].sjalvkontroll.bonus = 4;
+	handelsetabeller.svartkonstsammanslutningar[4].subval[0][0][0].ovrigt="Har levt ett asketiskt liv."	
+
+	handelsetabeller.svartkonstsammanslutningar[5] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[5].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[5].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[5].rubrik = "Avslöjat mörk familjehemlighet"
+	handelsetabeller.svartkonstsammanslutningar[5].beskrivning = "Rollpersonen har avslöjat en mörk familjehemlighet, exakt vad det rör sig om är upp till spelaren. Hursomhelst har familjen delats i två läger, dels de som tycker det var rätt att avslöja och dels de som hävdar att rollpersonen far med osanning och drar familjens rykte i smutsen."
+	handelsetabeller.svartkonstsammanslutningar[5].beskrivninghak = "\+1 Vilja, \+1 Utstrålning. 2 enheter Sociala färdigheter"
+	handelsetabeller.svartkonstsammanslutningar[5].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[5].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[5].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[5].subval[0][0][0].socialafardigheterenheter = 2; 
+	handelsetabeller.svartkonstsammanslutningar[5].subval[0][0][0].vilja = {};
+	handelsetabeller.svartkonstsammanslutningar[5].subval[0][0][0].vilja.varde =1; 
+	handelsetabeller.svartkonstsammanslutningar[5].subval[0][0][0].utstralning = {};
+	handelsetabeller.svartkonstsammanslutningar[5].subval[0][0][0].utstralning.varde =1; 
+	handelsetabeller.svartkonstsammanslutningar[5].subval[0][0][0].kontakt="Splittrad familj efter att denne avslöjat mörk familjehemlighet."
+
+	handelsetabeller.svartkonstsammanslutningar[6] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[6].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[6].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[6].rubrik = "Befriat kättare"
+	handelsetabeller.svartkonstsammanslutningar[6].beskrivning = "Rollpersonen har befriat en fånge som var dömd till döden för kätteri."
+	handelsetabeller.svartkonstsammanslutningar[6].beskrivninghak = "Lättlärd i Gömma och Smyga. Rollpersonen lärde sig även ett och annat av kättaren. Välj mellan 2 enheter Kunskapsfärdigheter och 2 enheter Mystikfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[6].beskrivninghakvaldbas = "Lättlärd i Gömma och Smyga. ";
+	handelsetabeller.svartkonstsammanslutningar[6].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[6].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[6].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[6].subval[0][0][0].gomma = {};
+	handelsetabeller.svartkonstsammanslutningar[6].subval[0][0][0].gomma.lattlard=1; 
+	handelsetabeller.svartkonstsammanslutningar[6].subval[0][0][0].smyga = {};
+	handelsetabeller.svartkonstsammanslutningar[6].subval[0][0][0].smyga.lattlard=1;
+	handelsetabeller.svartkonstsammanslutningar[6].subval[0][0][0].kontakt="Har befriat en kättare";
+	
+	handelsetabeller.svartkonstsammanslutningar[6].subval[0].push([]);
+	handelsetabeller.svartkonstsammanslutningar[6].subval[0][1][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[6].subval[0][1][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[6].subval[0][1][0].vald = 0; 
+	
+	handelsetabeller.svartkonstsammanslutningar[6].subval[0][1][0].antalsubval=1;
+	
+	handelsetabeller.svartkonstsammanslutningar[6].subval[0][1][1] = {};
+	handelsetabeller.svartkonstsammanslutningar[6].subval[0][1][1].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[6].subval[0][1][1].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[6].subval[0][1][1].kunskapsfardigheterenheter=2;
+	handelsetabeller.svartkonstsammanslutningar[6].subval[0][1][1].rubrik="2 enheter Kunskapsfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[6].subval[0][1][1].beskrivninghakvaldbas="2 enheter Kunskapsfärdigheter"
+	
+	
+	handelsetabeller.svartkonstsammanslutningar[6].subval[0][1][2] = {};
+	handelsetabeller.svartkonstsammanslutningar[6].subval[0][1][2].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[6].subval[0][1][2].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[6].subval[0][1][2].mystikfardigheterenheter=2;
+	handelsetabeller.svartkonstsammanslutningar[6].subval[0][1][2].rubrik="2 enheter Mystikfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[6].subval[0][1][2].beskrivninghakvaldbas="2 enheter Mystikfärdigheter"
+	
+
+	handelsetabeller.svartkonstsammanslutningar[7] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[7].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[7].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[7].rubrik = "Besökt helgedomar"
+	handelsetabeller.svartkonstsammanslutningar[7].beskrivning = "Personen har besökt heliga platser under sina resor och mött en hel del präster och troende."
+	handelsetabeller.svartkonstsammanslutningar[7].beskrivninghak = "3 enheter Mystikfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[7].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[7].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[7].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[7].subval[0][0][0].mystikfardigheterenheter = 3; 
+
+	handelsetabeller.svartkonstsammanslutningar[8] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[8].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[8].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[8].rubrik = "Blivit av med förbannelse"
+	handelsetabeller.svartkonstsammanslutningar[8].beskrivning = "Rollpersonen har blivit av med en förbannelse som vilat över denne. Var förbannelsen kom ifrån, hur den hävdes och hur den var avgörs av spelaren."
+	handelsetabeller.svartkonstsammanslutningar[8].beskrivninghak = "Välj mellan 4 enheter Kunskapsfärdigheter och 4 enheter Mystikfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[8].beskrivninghakvaldbas = "";
+	
+	handelsetabeller.svartkonstsammanslutningar[8].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[8].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[8].subval[0][0][0].vald = 0; 
+	
+	handelsetabeller.svartkonstsammanslutningar[8].subval[0][0][0].ovrigt="Har blivit av med förbannelse."
+	handelsetabeller.svartkonstsammanslutningar[8].subval[0].push([]);
+	handelsetabeller.svartkonstsammanslutningar[8].subval[0][1][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[8].subval[0][1][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[8].subval[0][1][0].vald = 0; 
+	
+	handelsetabeller.svartkonstsammanslutningar[8].subval[0][1][0].antalsubval=1;
+	
+	handelsetabeller.svartkonstsammanslutningar[8].subval[0][1][1] = {};
+	handelsetabeller.svartkonstsammanslutningar[8].subval[0][1][1].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[8].subval[0][1][1].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[8].subval[0][1][1].kunskapsfardigheterenheter=4;
+	handelsetabeller.svartkonstsammanslutningar[8].subval[0][1][1].rubrik="4 enheter Kunskapsfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[8].subval[0][1][1].beskrivninghakvaldbas="4 enheter Kunskapsfärdigheter"
+	
+	handelsetabeller.svartkonstsammanslutningar[8].subval[0][1][2] = {};
+	handelsetabeller.svartkonstsammanslutningar[8].subval[0][1][2].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[8].subval[0][1][2].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[8].subval[0][1][2].mystikfardigheterenheter=4;
+	handelsetabeller.svartkonstsammanslutningar[8].subval[0][1][2].rubrik="4 enheter Mystikfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[8].subval[0][1][2].beskrivninghakvaldbas="4 enheter Mystikfärdigheter"
+	
+
+	handelsetabeller.svartkonstsammanslutningar[9] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[9].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[9].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[9].rubrik = "Botemedel mot sjukdom"
+	handelsetabeller.svartkonstsammanslutningar[9].beskrivning = "Rollpersonen har upptäckt ett botemedel mot en sjukdom som härjat i trakten. "
+	handelsetabeller.svartkonstsammanslutningar[9].beskrivninghak = "Lättlärd i Kirurgi och Läkekonst. Slå två gånger på bakgrundstabellen för att ta reda på vilka som blivit hjälpta av rollpersonen och som nu är evigt tacksamma."
+	handelsetabeller.svartkonstsammanslutningar[9].beskrivninghakvaldbas = "Lättlärd i Kirurgi och Läkekonst. ";
+	handelsetabeller.svartkonstsammanslutningar[9].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[9].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[9].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[9].subval[0][0][0].kirurgi = {};
+	handelsetabeller.svartkonstsammanslutningar[9].subval[0][0][0].kirurgi.lattlard=1; 
+	handelsetabeller.svartkonstsammanslutningar[9].subval[0][0][0].lakekonst = {};
+	handelsetabeller.svartkonstsammanslutningar[9].subval[0][0][0].lakekonst.lattlard=1; 
+	handelsetabeller.svartkonstsammanslutningar[9].subval[0][0][0].kontaktbas="Har upptäckt ett botemedel mot en sjukdom och på så vis hjälpt kontakt1_pluralobestamd och kontakt2_pluralobestamd, vilka nu är evigt tacksamma.";
+	handelsetabeller.svartkonstsammanslutningar[9].subval[0][0][0].kontaktenhetbool=[0,0];
+	handelsetabeller.svartkonstsammanslutningar[9].subval[0][0][0].beskrivningvaldbas="Bland de hjälpta finns kontakt1_pluralobestamd och kontakt2_pluralobestamd, vilka nu är evigt tacksamma.";
+	
+	
+	handelsetabeller.svartkonstsammanslutningar[10] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[10].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[10].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[10].rubrik = "Ceremonimästare"
+	handelsetabeller.svartkonstsammanslutningar[10].beskrivning = "Rollpersonen är en erkänd ceremonimästare och denne frågas ofta om råd i frågor som rör det ceremoniella."
+	handelsetabeller.svartkonstsammanslutningar[10].beskrivninghak = "Lättlärd i Ceremoni och Kanalisera. 3 mysterier"
+	handelsetabeller.svartkonstsammanslutningar[10].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[10].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[10].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[10].subval[0][0][0].ceremoni = {};
+	handelsetabeller.svartkonstsammanslutningar[10].subval[0][0][0].ceremoni.lattlard=1; 
+	handelsetabeller.svartkonstsammanslutningar[10].subval[0][0][0].kanalisera = {};
+	handelsetabeller.svartkonstsammanslutningar[10].subval[0][0][0].kanalisera.lattlard=1; 
+	handelsetabeller.svartkonstsammanslutningar[10].subval[0][0][0].mysterier=3; 
+
+	
+	handelsetabeller.svartkonstsammanslutningar[11] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[11].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[11].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[11].rubrik = "Deltagit i rit"
+	handelsetabeller.svartkonstsammanslutningar[11].beskrivning = "Rollpersonen har deltagit i en viktig rit och utmärkt sig vilket har gett gillande, erkännande och ett visst mått av avund av de övriga som deltog i riten eller bara tittade på."
+	handelsetabeller.svartkonstsammanslutningar[11].beskrivninghak = "Välj mellan 4 enheter Kunskapsfärdigheter och 4 enheter Mystikfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[11].beskrivninghakvaldbas = "";
+	
+	handelsetabeller.svartkonstsammanslutningar[11].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[11].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[11].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[11].subval[0][0][0].ovrigt="Har deltagit i en viktig rit." 
+	
+	handelsetabeller.svartkonstsammanslutningar[11].subval[0].push([]);
+	handelsetabeller.svartkonstsammanslutningar[11].subval[0][1][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[11].subval[0][1][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[11].subval[0][1][0].vald = 0; 
+	
+	handelsetabeller.svartkonstsammanslutningar[11].subval[0][1][0].antalsubval=1;
+	
+	handelsetabeller.svartkonstsammanslutningar[11].subval[0][1][1] = {};
+	handelsetabeller.svartkonstsammanslutningar[11].subval[0][1][1].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[11].subval[0][1][1].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[11].subval[0][1][1].kunskapsfardigheterenheter=4;
+	handelsetabeller.svartkonstsammanslutningar[11].subval[0][1][1].rubrik="4 enheter Kunskapsfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[11].subval[0][1][1].beskrivninghakvaldbas="4 enheter Kunskapsfärdigheter"
+	
+	handelsetabeller.svartkonstsammanslutningar[11].subval[0][1][2] = {};
+	handelsetabeller.svartkonstsammanslutningar[11].subval[0][1][2].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[11].subval[0][1][2].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[11].subval[0][1][2].mystikfardigheterenheter=4;
+	handelsetabeller.svartkonstsammanslutningar[11].subval[0][1][2].rubrik="4 enheter Mystikfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[11].subval[0][1][2].beskrivninghakvaldbas="4 enheter Mystikfärdigheter"
+	
+	
+	handelsetabeller.svartkonstsammanslutningar[12] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[12].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[12].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[12].rubrik = "Demonisk avkomma"
+	handelsetabeller.svartkonstsammanslutningar[12].beskrivning = "Rollpersonen har fått en avkomma tillsammans med en demon. Var demonen och barnet nu befinner sig vet inte rollpersonen och denne kastas mellan känslor av avsmak, kärlek och längtan."
+	handelsetabeller.svartkonstsammanslutningar[12].beskrivninghak = "2 Avtrubbningskryss för övernaturligt"
+	handelsetabeller.svartkonstsammanslutningar[12].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[12].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[12].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[12].subval[0][0][0].avtrubbningovernaturligt = 2; 
+	handelsetabeller.svartkonstsammanslutningar[12].subval[0][0][0].kontakt="Har en avkomma tillsammans med en demon."
+
+	handelsetabeller.svartkonstsammanslutningar[13] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[13].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[13].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[13].rubrik = "Djurens frände"
+	handelsetabeller.svartkonstsammanslutningar[13].beskrivning = "Rollpersonen har mycket god hand om djur och dessa trivs i rollpersonens närhet. Genom sin blotta närvaro kan rollpersonen lugna ett skrämt eller aggressivt djur."
+	handelsetabeller.svartkonstsammanslutningar[13].beskrivninghak = "2 enheter Vildmarksfärdigheter. Kännetecknet Djurvän 4T6"
+	handelsetabeller.svartkonstsammanslutningar[13].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[13].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[13].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[13].subval[0][0][0].vildmarksfardigheterenheter = 2; 
+	handelsetabeller.svartkonstsammanslutningar[13].subval[0][0][0].djurvan = {};
+	handelsetabeller.svartkonstsammanslutningar[13].subval[0][0][0].djurvan.enheter = 3; 
+	handelsetabeller.svartkonstsammanslutningar[13].subval[0][0][0].formaga="Genom sin blotta närvaro kan rollpersonen lugna ett skrämt eller aggressivt djur.";
+	
+
+	handelsetabeller.svartkonstsammanslutningar[14] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[14].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[14].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[14].rubrik = "Drar till sig det övernaturliga"
+	handelsetabeller.svartkonstsammanslutningar[14].beskrivning = "Rollpersonen har en aura som drar till sig övernaturliga väsen. När en demon, ande eller vandöd finns i området är det rollpersonen som de upptäcker först. Konstiga saker tenderar att hända i rollpersonens närhet och vissa ser säkerligen denne som ett ondskefullt omen. Rollpersonen har dock härdats av detta och är nu beredd på det mesta."
+	handelsetabeller.svartkonstsammanslutningar[14].beskrivninghak = "\+1 Vilja. 2 Avtrubbningskryss för övernaturligt"
+	handelsetabeller.svartkonstsammanslutningar[14].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[14].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[14].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[14].subval[0][0][0].vilja = {};
+	handelsetabeller.svartkonstsammanslutningar[14].subval[0][0][0].vilja.varde =1; 
+	handelsetabeller.svartkonstsammanslutningar[14].subval[0][0][0].avtrubbningovernaturligt = 2; 
+	handelsetabeller.svartkonstsammanslutningar[14].subval[0][0][0].formaga="Har en aura som drar till sig övernaturliga väsen."
+
+	
+	handelsetabeller.svartkonstsammanslutningar[15] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[15].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[15].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[15].rubrik = "Drömmar från ett annat liv"
+	handelsetabeller.svartkonstsammanslutningar[15].beskrivning = "Rollpersonen får drömmar och minnesglimtar från något som verkar ha varit ett tidigare liv. Denne har färdigheter och kunskap som denne inte borde kunna ha."
+	handelsetabeller.svartkonstsammanslutningar[15].beskrivninghak = "4 valfria enheter"
+	handelsetabeller.svartkonstsammanslutningar[15].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[15].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[15].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[15].subval[0][0][0].valfriaenheter=4; 
+	handelsetabeller.svartkonstsammanslutningar[15].subval[0][0][0].formaga="Får drömmar och minnesglimtar från ett tidigare liv."
+
+	
+	handelsetabeller.svartkonstsammanslutningar[16] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[16].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[16].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[16].rubrik = "Elementkännare"
+	handelsetabeller.svartkonstsammanslutningar[16].beskrivning = "Rollpersonen har en förmåga att känna sig till vilka element som finns i närheten."
+	handelsetabeller.svartkonstsammanslutningar[16].beskrivninghak = "\+1 Uppfattning. Rollpersonen kan så gott som alltid känna sig till om det finns guld i berget, vatten under jorden eller liknande. Kännetecknet Elementkännare 4T6"
+	handelsetabeller.svartkonstsammanslutningar[16].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[16].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[16].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[16].subval[0][0][0].uppfattning = {};
+	handelsetabeller.svartkonstsammanslutningar[16].subval[0][0][0].uppfattning.varde=1;
+	handelsetabeller.svartkonstsammanslutningar[16].subval[0][0][0].elementkannare = {};
+	handelsetabeller.svartkonstsammanslutningar[16].subval[0][0][0].elementkannare.enheter=3;
+	
+
+	handelsetabeller.svartkonstsammanslutningar[17] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[17].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[17].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[17].rubrik = "En tid som död"
+	handelsetabeller.svartkonstsammanslutningar[17].beskrivning = "Rollpersonen har till synes dött men sedan kommit tillbaka till livet. Kanske drunknade denne, blev allvarligt skadad i strid eller fick i sig ett dödligt gift. När rollpersonen vaknade upp så var denne för evigt förändrad."
+	handelsetabeller.svartkonstsammanslutningar[17].beskrivninghak = "4 valfria enheter. \+1T6 Självkontroll vid Nedbrytning"
+	handelsetabeller.svartkonstsammanslutningar[17].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[17].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[17].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[17].subval[0][0][0].valfriaenheter=4; 
+	handelsetabeller.svartkonstsammanslutningar[17].subval[0][0][0].sjalvkontroll = {};
+	handelsetabeller.svartkonstsammanslutningar[17].subval[0][0][0].sjalvkontroll.egenskap = "\+1T6 vid Nedbrytning"; 
+	handelsetabeller.svartkonstsammanslutningar[17].subval[0][0][0].ovrigt="Har till synes dött men sedan kommit tillbaka till livet."
+
+	handelsetabeller.svartkonstsammanslutningar[18] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[18].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[18].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[18].rubrik = "Exceptionellt minne"
+	handelsetabeller.svartkonstsammanslutningar[18].beskrivning = "Rollpersonen har mycket gott minne och har en förmåga att minnas detaljer av allehanda slag."
+	handelsetabeller.svartkonstsammanslutningar[18].beskrivninghak = "\+1T6 Visdom. Lättlärd i alla Kunskapsfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[18].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[18].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[18].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[18].subval[0][0][0] = {};
+	handelsetabeller.svartkonstsammanslutningar[18].subval[0][0][0].lattlardallakunskapsfardigheter=1; 
+	handelsetabeller.svartkonstsammanslutningar[18].subval[0][0][0].visdom = {};
+	handelsetabeller.svartkonstsammanslutningar[18].subval[0][0][0].visdom.varde = 4;
+	handelsetabeller.svartkonstsammanslutningar[18].subval[0][0][0].formaga="Exceptionellt minne."
+
+
+	handelsetabeller.svartkonstsammanslutningar[19] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[19].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[19].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[19].rubrik = "Experiment"
+	handelsetabeller.svartkonstsammanslutningar[19].beskrivning = "Rollpersonen har experimenterat med (eller blivit utsatt för) olika preparat som på något sätt förvridit dennes sinne och kropp. Detta kan vara allt ifrån alkemiska mixturer till svampar eller droger."
+	handelsetabeller.svartkonstsammanslutningar[19].beskrivninghak = "–3 Styrka, Tålighet eller Rörlighet. \+1T6 Vilja eller Psyke"
+	handelsetabeller.svartkonstsammanslutningar[19].beskrivninghakvaldbas = "";
+	
+	handelsetabeller.svartkonstsammanslutningar[19].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[19].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[19].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[19].subval[0][0][0].ovrigt="Har experimenterat med (eller blivit utsatt för) olika preparat som på något sätt förvridit dennes sinne och kropp.";
+	handelsetabeller.svartkonstsammanslutningar[19].subval[0][0][0].antalsubval=1;
+	
+	handelsetabeller.svartkonstsammanslutningar[19].subval.push([[]]); 
+	handelsetabeller.svartkonstsammanslutningar[19].subval[1][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[19].subval[1][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[19].subval[1][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[19].subval[1][0][0].antalsubval=1;
+	handelsetabeller.svartkonstsammanslutningar[19].subval[1][0][0].beskrivninghakvaldbas = "";
+	
+	handelsetabeller.svartkonstsammanslutningar[19].subval[1].push([]); 
+	handelsetabeller.svartkonstsammanslutningar[19].subval[1][1][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[19].subval[1][1][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[19].subval[1][1][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[19].subval[1][1][0].styrka = {};
+	handelsetabeller.svartkonstsammanslutningar[19].subval[1][1][0].styrka.varde=-3;
+	handelsetabeller.svartkonstsammanslutningar[19].subval[1][1][0].rubrik="-3 Styrka";	
+	handelsetabeller.svartkonstsammanslutningar[19].subval[1][1][0].beskrivninghakvaldbas="-3 Styrka. ";	
+	
+	
+	handelsetabeller.svartkonstsammanslutningar[19].subval[1].push([]); 
+	handelsetabeller.svartkonstsammanslutningar[19].subval[1][2][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[19].subval[1][2][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[19].subval[1][2][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[19].subval[1][2][0].talighet = {};
+	handelsetabeller.svartkonstsammanslutningar[19].subval[1][2][0].talighet.varde=-3;
+	handelsetabeller.svartkonstsammanslutningar[19].subval[1][2][0].rubrik="-3 Tålighet";	
+	handelsetabeller.svartkonstsammanslutningar[19].subval[1][2][0].beskrivninghakvaldbas="-3 Tålighet. ";	
+	
+	
+	handelsetabeller.svartkonstsammanslutningar[19].subval[1].push([]); 
+	handelsetabeller.svartkonstsammanslutningar[19].subval[1][3][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[19].subval[1][3][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[19].subval[1][3][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[19].subval[1][3][0].rorlighet = {};
+	handelsetabeller.svartkonstsammanslutningar[19].subval[1][3][0].rorlighet.varde=-3;
+	handelsetabeller.svartkonstsammanslutningar[19].subval[1][3][0].rubrik="-3 Rörlighet";	
+	handelsetabeller.svartkonstsammanslutningar[19].subval[1][3][0].beskrivninghakvaldbas="-3 Rörlighet. ";	
+	
+	handelsetabeller.svartkonstsammanslutningar[19].subval.push([[]]); 
+	handelsetabeller.svartkonstsammanslutningar[19].subval[2][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[19].subval[2][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[19].subval[2][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[19].subval[2][0][0].antalsubval=1;
+	handelsetabeller.svartkonstsammanslutningar[19].subval[2][0][0].beskrivninghakvaldbas = "";
+	handelsetabeller.svartkonstsammanslutningar[19].subval[2].push([]); 
+	
+	handelsetabeller.svartkonstsammanslutningar[19].subval[2][1][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[19].subval[2][1][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[19].subval[2][1][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[19].subval[2][1][0].vilja = {};
+	handelsetabeller.svartkonstsammanslutningar[19].subval[2][1][0].vilja.varde=4;
+	handelsetabeller.svartkonstsammanslutningar[19].subval[2][1][0].rubrik="\+1T6 Vilja";	
+	handelsetabeller.svartkonstsammanslutningar[19].subval[2][1][0].beskrivninghakvaldbas="\+1T6 Vilja.";	
+	
+	
+	handelsetabeller.svartkonstsammanslutningar[19].subval[2].push([]); 
+	handelsetabeller.svartkonstsammanslutningar[19].subval[2][2][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[19].subval[2][2][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[19].subval[2][2][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[19].subval[2][2][0].psyke = {};
+	handelsetabeller.svartkonstsammanslutningar[19].subval[2][2][0].psyke.varde=4;
+	handelsetabeller.svartkonstsammanslutningar[19].subval[2][2][0].rubrik="\+1T6 Psyke";	
+	handelsetabeller.svartkonstsammanslutningar[19].subval[2][2][0].beskrivninghakvaldbas="\+1T6 Psyke.";	
+	
+
+	handelsetabeller.svartkonstsammanslutningar[20] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[20].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[20].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[20].rubrik = "Familiarii"
+	handelsetabeller.svartkonstsammanslutningar[20].beskrivning = "Rollpersonen har ett mindre djur med en ande bunden till sig. Det kan exempelvis vara en fladdermus, en råtta, en padda, en korp eller en orm."
+	handelsetabeller.svartkonstsammanslutningar[20].beskrivninghak = "Lättlärd i Naturlära. 3 enheter Mystikfärdigheter. Djuret beter sig normalt och kan inte tala. Det kan däremot tänka logiskt och förstå vad rollpersonen säger och frakta meddelanden till rätt personer och liknande"
+	handelsetabeller.svartkonstsammanslutningar[20].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[20].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[20].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[20].subval[0][0][0].mystikfardigheterenheter = 3; 
+	handelsetabeller.svartkonstsammanslutningar[20].subval[0][0][0].naturlara = {};
+	handelsetabeller.svartkonstsammanslutningar[20].subval[0][0][0].naturlara.lattlard=1; 
+	handelsetabeller.svartkonstsammanslutningar[20].subval[0][0][0].resurs="Har ett mindre djur med en ande bunden till sig.";
+
+	handelsetabeller.svartkonstsammanslutningar[21] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[21].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[21].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[21].rubrik = "Formelsamling"
+	handelsetabeller.svartkonstsammanslutningar[21].beskrivning = "Rollpersonen har en formelsamling i sin ägo."
+	handelsetabeller.svartkonstsammanslutningar[21].beskrivninghak = "I boken finns instruktioner till 5 mysterier. 2 enheter Mystikfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[21].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[21].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[21].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[21].subval[0][0][0].mystikfardigheterenheter = 2; 
+	handelsetabeller.svartkonstsammanslutningar[21].subval[0][0][0].resurs="En formelsamling med instruktioner till 5 mysterier.";
+
+	handelsetabeller.svartkonstsammanslutningar[22] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[22].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[22].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[22].rubrik = "Funnit förlorad kunskap"
+	handelsetabeller.svartkonstsammanslutningar[22].beskrivning = "Rollpersonen har funnit kunskap som länge tros har varit förlorad. Detta har gjort denne känd i sina kretsar. Det kan röra sig om skrifter av ett helgon, en magisk bok eller kanske ett recept eller en karta av något slag. Rollpersonen har tagit del av kunskapen och diskuterat med många i sina kretsar vilket ökat dennes bildning."
+	handelsetabeller.svartkonstsammanslutningar[22].beskrivninghak = "\+2 Visdom. 4 valfria enheter"
+	handelsetabeller.svartkonstsammanslutningar[22].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[22].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[22].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[22].subval[0][0][0].valfriaenheter=4; 
+	handelsetabeller.svartkonstsammanslutningar[22].subval[0][0][0].visdom = {};
+	handelsetabeller.svartkonstsammanslutningar[22].subval[0][0][0].visdom.varde =2; 
+	handelsetabeller.svartkonstsammanslutningar[22].subval[0][0][0].ovrigt="Har funnit kunskap som länge tros har varit förlorad.";
+
+	handelsetabeller.svartkonstsammanslutningar[23] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[23].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[23].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[23].rubrik = "Fått medaljong"
+	handelsetabeller.svartkonstsammanslutningar[23].beskrivning = "En mystisk man har under en mörk och regnig natt överlämnat en medaljong till rollpersonen. Den tycks ha en inneboende styrka som rollpersonen kan ta del av."
+	handelsetabeller.svartkonstsammanslutningar[23].beskrivninghak = "En gång per spelmöte kan medaljongen användas för att ge rollpersonen en bonus på \+1T6 för ett tärningsslag"
+	handelsetabeller.svartkonstsammanslutningar[23].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[23].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[23].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[23].subval[0][0][0].resurs="En medaljong som rollpersonen fått av en mystisk man. En gång per spelmöte kan medaljongen användas för att ge rollpersonen en bonus på \+1T6 för ett tärningsslag.";
+
+	handelsetabeller.svartkonstsammanslutningar[24] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[24].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[24].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[24].rubrik = "Föraktfull"
+	handelsetabeller.svartkonstsammanslutningar[24].beskrivning = "Rollpersonen känner förakt för en viss typ av individer och har även blivit envis kring det. Detta kan röra sig om en samhällsgrupp såsom bönder eller präster eller ett folkslag såsom alver, zhaner, dvärgar eller liknande."
+	handelsetabeller.svartkonstsammanslutningar[24].beskrivninghak = "\+1 Vilja. 1 Avtrubbningskryss för utsatthet. –1T6 i alla sociala situationer då denne måste umgås med dessa typer av individer då det inte gäller hot eller förnedring"
+	handelsetabeller.svartkonstsammanslutningar[24].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[24].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[24].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[24].subval[0][0][0].vilja = {};
+	handelsetabeller.svartkonstsammanslutningar[24].subval[0][0][0].vilja.varde=1;; 
+	handelsetabeller.svartkonstsammanslutningar[24].subval[0][0][0].avtrubbningutsatthet=1;
+	handelsetabeller.svartkonstsammanslutningar[24].subval[0][0][0].formaga="Känner förakt för en viss typ av individer. –1T6 i alla sociala situationer då denne måste umgås med dessa typer av individer då det inte gäller hot eller förnedring";
+	
+	
+
+	handelsetabeller.svartkonstsammanslutningar[25] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[25].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[25].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[25].rubrik = "Förbannelse"
+	handelsetabeller.svartkonstsammanslutningar[25].beskrivning = "Rollpersonen har en förbannelse som vilar över denne. Hur denna kom till är upp till spelaren. Mycket tid har lagts på att försöka förstå hur man blir av med förbannelsen men ännu utan framgång."
+	handelsetabeller.svartkonstsammanslutningar[25].beskrivninghak = "Välj mellan 4 enheter Kunskapsfärdigheter och 4 enheter Mystikfärdigheter. Det kan röra sig om att rollpersonen alltid går vilse i skogen, inte kan öppna dörrar eller att denne alltid drar till sig spöken och övernaturligheter"
+	handelsetabeller.svartkonstsammanslutningar[25].beskrivninghak = "Förbannelsen kan röra sig om att rollpersonen alltid går vilse i skogen, inte kan öppna dörrar eller att denne alltid drar till sig spöken och övernaturligheter. "
+	
+	handelsetabeller.svartkonstsammanslutningar[25].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[25].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[25].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[25].subval[0][0][0].formaga="Har en förbannelse vilande över sig.";
+	
+	handelsetabeller.svartkonstsammanslutningar[25].subval[0].push([]);
+	handelsetabeller.svartkonstsammanslutningar[25].subval[0][1][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[25].subval[0][1][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[25].subval[0][1][0].vald = 0; 
+	
+	handelsetabeller.svartkonstsammanslutningar[25].subval[0][1][0].antalsubval=1;
+	
+	handelsetabeller.svartkonstsammanslutningar[25].subval[0][1][1] = {};
+	handelsetabeller.svartkonstsammanslutningar[25].subval[0][1][1].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[25].subval[0][1][1].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[25].subval[0][1][1].kunskapsfardigheterenheter=4;
+	handelsetabeller.svartkonstsammanslutningar[25].subval[0][1][1].rubrik="4 enheter Kunskapsfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[25].subval[0][1][1].beskrivninghakvaldbas="4 enheter Kunskapsfärdigheter."
+	
+	
+	handelsetabeller.svartkonstsammanslutningar[25].subval[0][1][2] = {};
+	handelsetabeller.svartkonstsammanslutningar[25].subval[0][1][2].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[25].subval[0][1][2].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[25].subval[0][1][2].mystikfardigheterenheter=4;
+	handelsetabeller.svartkonstsammanslutningar[25].subval[0][1][2].rubrik="4 enheter Mystikfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[25].subval[0][1][2].beskrivninghakvaldbas ="4 enheter Mystikfärdigheter."
+
+	handelsetabeller.svartkonstsammanslutningar[26] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[26].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[26].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[26].rubrik = "Förbjuden kult"
+	handelsetabeller.svartkonstsammanslutningar[26].beskrivning = "Personen är eller har varit medlem i en kult. Detta kan vara en religiös avart såsom lamiakulten, glutharianerna eller Xinukulten. Skulle tiden i kulten avslöjas riskerar personen att bli förkastad eller till och med avrättad."
+	handelsetabeller.svartkonstsammanslutningar[26].beskrivninghak = "Välj mellan 4 enheter Kunskapsfärdigheter och 4 enheter Mystikfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[26].beskrivninghakvaldbas = "";
+	
+	handelsetabeller.svartkonstsammanslutningar[26].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[26].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[26].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[26].subval[0][0][0].ovrigt="Är eller har varit medlem i en förbjuden kult.";
+	
+	handelsetabeller.svartkonstsammanslutningar[26].subval[0].push([]);
+	handelsetabeller.svartkonstsammanslutningar[26].subval[0][1][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[26].subval[0][1][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[26].subval[0][1][0].vald = 0; 
+	
+	handelsetabeller.svartkonstsammanslutningar[26].subval[0][1][0].antalsubval=1;
+	
+	
+	handelsetabeller.svartkonstsammanslutningar[26].subval[0][1][1] = {};
+	handelsetabeller.svartkonstsammanslutningar[26].subval[0][1][1].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[26].subval[0][1][1].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[26].subval[0][1][1].kunskapsfardigheterenheter=4;
+	handelsetabeller.svartkonstsammanslutningar[26].subval[0][1][1].rubrik="4 enheter Kunskapsfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[26].subval[0][1][1].beskrivninghakvaldbas="4 enheter Kunskapsfärdigheter."
+	
+	handelsetabeller.svartkonstsammanslutningar[26].subval[0][1][2] = {};
+	handelsetabeller.svartkonstsammanslutningar[26].subval[0][1][2].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[26].subval[0][1][2].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[26].subval[0][1][2].mystikfardigheterenheter=4;
+	handelsetabeller.svartkonstsammanslutningar[26].subval[0][1][2].rubrik="4 enheter Mystikfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[26].subval[0][1][2].beskrivninghakvaldbas="4 enheter Mystikfärdigheter."
+	
+
+	handelsetabeller.svartkonstsammanslutningar[27] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[27].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[27].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[27].rubrik = "Förbjuden kunskap"
+	handelsetabeller.svartkonstsammanslutningar[27].beskrivning = "Personen har kommit över förbjuden kunskap och lärt sig nyttja denna. Rollpersonen har dock fått en fiende som är ute efter hämnd då denne blivit lurad på kunskapen."
+	handelsetabeller.svartkonstsammanslutningar[27].beskrivningvaldbas = "";
+	
+	handelsetabeller.svartkonstsammanslutningar[27].beskrivninghak = "6 enheter Mystikfärdigheter. 2 mysterier. Slå två gånger på bakgrundstabellen och välj en som visar vem som är ute efter rollpersonen"
+	handelsetabeller.svartkonstsammanslutningar[27].beskrivninghakvaldbas = "6 enheter Mystikfärdigheter. 2 mysterier. ";
+	
+	handelsetabeller.svartkonstsammanslutningar[27].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[27].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[27].subval[0][0][0].vald = 0; 
+	
+	handelsetabeller.svartkonstsammanslutningar[27].subval[0][0][0].mystikfardigheterenheter=6;
+	handelsetabeller.svartkonstsammanslutningar[27].subval[0][0][0].mysterier=2;
+	handelsetabeller.svartkonstsammanslutningar[27].subval[0][0][0].kontaktenhetbool=[0];
+	handelsetabeller.svartkonstsammanslutningar[27].subval[0][0][0].kontaktbas="kontakt1_Obestamd är ute efter rollpersonen då denne fått tag på förbjuden kunskap."
+	handelsetabeller.svartkonstsammanslutningar[27].subval[0][0][0].beskrivningvaldbas = "Personen har kommit över förbjuden kunskap och lärt sig nyttja denna. Rollpersonen har dock fått en fiende i form av kontakt1_obestamd som är ute efter hämnd då denne blivit lurad på kunskapen."
+	
+
+	handelsetabeller.svartkonstsammanslutningar[28] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[28].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[28].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[28].rubrik = "Förbjuden sammanslutning"
+	handelsetabeller.svartkonstsammanslutningar[28].beskrivning = "Rollpersonen är eller har varit medlem i en sammanslutning som är bannlyst av de styrande. Detta kan röra sig om en politisk sammansvärjning eller en grupp personer som gått samman för att komma över kunskap eller uppnå ett mål."
+	handelsetabeller.svartkonstsammanslutningar[28].beskrivninghak = "\+2 Psyke, \+1 Visdom. Välj mellan 4 enheter Kunskapsfärdigheter och 4 enheter Mystikfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[28].beskrivninghakvaldbas = "\+2 Psyke, \+1 Visdom. ";
+	
+	handelsetabeller.svartkonstsammanslutningar[28].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[28].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[28].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[28].subval[0][0][0].ovrigt="Är eller har varit medlem i en förbjuden sammanslutning."
+	
+	handelsetabeller.svartkonstsammanslutningar[28].subval[0].push([]);
+	handelsetabeller.svartkonstsammanslutningar[28].subval[0][1][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[28].subval[0][1][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[28].subval[0][1][0].vald = 0; 
+	
+	handelsetabeller.svartkonstsammanslutningar[28].subval[0][1][0].antalsubval=1;
+	
+	handelsetabeller.svartkonstsammanslutningar[28].subval[0][1][1] = {};
+	handelsetabeller.svartkonstsammanslutningar[28].subval[0][1][1].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[28].subval[0][1][1].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[28].subval[0][1][1].kunskapsfardigheterenheter=4;
+	handelsetabeller.svartkonstsammanslutningar[28].subval[0][1][1].rubrik="4 enheter Kunskapsfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[28].subval[0][1][1].beskrivninghakvaldbas="4 enheter Kunskapsfärdigheter."
+	
+	handelsetabeller.svartkonstsammanslutningar[28].subval[0][1][2] = {};
+	handelsetabeller.svartkonstsammanslutningar[28].subval[0][1][2].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[28].subval[0][1][2].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[28].subval[0][1][2].mystikfardigheterenheter=4;
+	handelsetabeller.svartkonstsammanslutningar[28].subval[0][1][2].rubrik="4 enheter Mystikfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[28].subval[0][1][2].beskrivninghakvaldbas="4 enheter Mystikfärdigheter."
+	
+
+	handelsetabeller.svartkonstsammanslutningar[29] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[29].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[29].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[29].rubrik = "Förbjuden skrift"
+	handelsetabeller.svartkonstsammanslutningar[29].beskrivning = "Rollpersonen har kommit över en förbjuden skrift. Denna lunta kan vara allt från en ockult bok till en politisk satir som hånar makten. Boken är värdefull men att ha den i sin ägo är i sig farligt."
+	handelsetabeller.svartkonstsammanslutningar[29].beskrivninghak = "\+2 Visdom. 4 valfria enheter"
+	handelsetabeller.svartkonstsammanslutningar[29].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[29].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[29].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[29].subval[0][0][0].valfriaenheter=4; 
+	handelsetabeller.svartkonstsammanslutningar[29].subval[0][0][0].visdom = {};
+	handelsetabeller.svartkonstsammanslutningar[29].subval[0][0][0].visdom.varde =2; 
+	handelsetabeller.svartkonstsammanslutningar[29].subval[0][0][0].resurs="En förbjuden skrift.";
+
+	handelsetabeller.svartkonstsammanslutningar[30] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[30].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[30].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[30].rubrik = "Fördjupad självinsikt"
+	handelsetabeller.svartkonstsammanslutningar[30].beskrivning = "Rollpersonen har spenderat tid antingen i ensam bön och meditation eller tillsammans med en läromästare som väglett denne till att få en fördjupad självinsikt i sin personlighet. Detta har gett rollpersonen en nästan orubblig vilja."
+	handelsetabeller.svartkonstsammanslutningar[30].beskrivninghak = "\+1T6 Vilja. Expertisen Meditera 4T6"
+	handelsetabeller.svartkonstsammanslutningar[30].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[30].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[30].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[30].subval[0][0][0].vilja = {};
+	handelsetabeller.svartkonstsammanslutningar[30].subval[0][0][0].vilja.varde = 4; 
+	handelsetabeller.svartkonstsammanslutningar[30].subval[0][0][0].meditera = {};
+	handelsetabeller.svartkonstsammanslutningar[30].subval[0][0][0].meditera.enheter = 3; 
+
+	handelsetabeller.svartkonstsammanslutningar[31] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[31].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[31].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[31].rubrik = "Försvaga vandöd"
+	handelsetabeller.svartkonstsammanslutningar[31].beskrivning = "Rollpersonen har en förmåga som försvagar vandöda."
+	handelsetabeller.svartkonstsammanslutningar[31].beskrivninghak = "Alla vandöda, oavsett rang, får –1T6 på alla slag om de befinner sig inom Kort avstånd från rollpersonen"
+	handelsetabeller.svartkonstsammanslutningar[31].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[31].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[31].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[31].subval[0][0][0].formaga="Alla vandöda, oavsett rang, får –1T6 på alla slag om de befinner sig inom Kort avstånd från rollpersonen."; 
+
+	handelsetabeller.svartkonstsammanslutningar[32] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[32].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[32].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[32].rubrik = "Givmild beskyddare"
+	handelsetabeller.svartkonstsammanslutningar[32].beskrivning = "Rollpersonen har en givmild beskyddare som har gett denne en ansenlig summa pengar för att kunna fortsätta med att studera världens mysterier. Varför beskyddaren har gjort detta är inte tydligt men det tycks som att denne förväntar sig någon typ av gentjänst."
+	handelsetabeller.svartkonstsammanslutningar[32].beskrivningvaldbas = "";
+	handelsetabeller.svartkonstsammanslutningar[32].beskrivninghak = "3 enheter Kunskapsfärdigheter. Slå två gånger på bakgrundstabellen och välj en som visar vem beskyddaren är. Startbeloppet ökar med 2T6×10 silver."
+	handelsetabeller.svartkonstsammanslutningar[32].beskrivninghakvaldbas = "3 enheter Kunskapsfärdigheter. ";
+	
+	handelsetabeller.svartkonstsammanslutningar[32].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[32].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[32].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[32].subval[0][0][0].kunskapsfardigheterenheter=3;
+	handelsetabeller.svartkonstsammanslutningar[32].subval[0][0][0].pengarslag="2T6x10";
+	handelsetabeller.svartkonstsammanslutningar[32].subval[0][0][0].kontaktbas="kontakt1_Obestamd	är beskyddare åt rollpersonen."
+	handelsetabeller.svartkonstsammanslutningar[32].subval[0][0][0].beskrivninghakvaldbas="Startbeloppet ökar med pengar_resultat silver."
+	handelsetabeller.svartkonstsammanslutningar[32].subval[0][0][0].beskrivningvaldbas = "Rollpersonen har en givmild beskyddare som är kontakt1_rubrikliten som har gett denne en ansenlig summa pengar för att kunna fortsätta med att studera världens mysterier. Varför beskyddaren har gjort detta är inte tydligt men det tycks som att denne förväntar sig någon typ av gentjänst."
+	handelsetabeller.svartkonstsammanslutningar[32].subval[0][0][0].kontaktenhetbool=[0];
+	
+
+	handelsetabeller.svartkonstsammanslutningar[33] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[33].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[33].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[33].rubrik = "Glömd kunskap"
+	handelsetabeller.svartkonstsammanslutningar[33].beskrivning = "Rollpersonen har kunskap om någonting mystiskt som få känner till. Det kan exempelvis röra sig om platsen för ett gammalt gravfält, en högmagisk plats, en gammal kultplats eller ett försvunnet tempel, alternativt kan det handla om hur man kommer i kontakt med en demon, var det går att få tag på skrifter om dödsmagi eller hur man gör för att komma till underjorden."
+	handelsetabeller.svartkonstsammanslutningar[33].beskrivninghak = "4 valfria enheter som kan kopplas till denna kunskap"
+	handelsetabeller.svartkonstsammanslutningar[33].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[33].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[33].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[33].subval[0][0][0].valfriaenheter=4; 
+	handelsetabeller.svartkonstsammanslutningar[33].subval[0][0][0].ovrigt="Har kunskap om någonting mystiskt som få känner till.";
+
+	
+	handelsetabeller.svartkonstsammanslutningar[34] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[34].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[34].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[34].rubrik = "Går i sömnen"
+	handelsetabeller.svartkonstsammanslutningar[34].beskrivning = "Rollpersonen går då och då i sömnen. Det händer att denne vaknar på en annan plats än sin säng och blir ibland väckt när under sin sömngång och är då mycket förvirrad de första minuterna. Rollpersonen tycks dock genom sin säregna sömn fått en djupare förståelse inom vissa områden då denne grubblar på problemen innan läggdags och vaknar med lösningen."
+	handelsetabeller.svartkonstsammanslutningar[34].beskrivninghak = "Lättlärd i 3 valfria Kunskapsfärdigheter eller Mystikfärdigheter";
+	handelsetabeller.svartkonstsammanslutningar[34].beskrivninghakvaldbas = "";
+	
+	handelsetabeller.svartkonstsammanslutningar[34].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[34].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[34].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[34].subval[0][0][0].formaga="Går i sömnen";
+	
+	handelsetabeller.svartkonstsammanslutningar[34].subval[0].push([]);
+	handelsetabeller.svartkonstsammanslutningar[34].subval[0][1][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[34].subval[0][1][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[34].subval[0][1][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[34].subval[0][1][0].antalsubval=1;
+	
+	handelsetabeller.svartkonstsammanslutningar[34].subval[0][1][1] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[34].subval[0][1][1].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[34].subval[0][1][1].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[34].subval[0][1][1].lattlardkunskapsfardigheter=3;
+	handelsetabeller.svartkonstsammanslutningar[34].subval[0][1][1].rubrik="Lättlärd i 3 valfria Kunskapsfärdigheter."
+	handelsetabeller.svartkonstsammanslutningar[34].subval[0][1][1].beskrivninghakvaldbas="Lättlärd i 3 valfria Kunskapsfärdigheter."
+	
+	
+	handelsetabeller.svartkonstsammanslutningar[34].subval[0][1][2] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[34].subval[0][1][2].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[34].subval[0][1][2].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[34].subval[0][1][2].lattlardmystikfardigheter=3;
+	handelsetabeller.svartkonstsammanslutningar[34].subval[0][1][2].rubrik="Lättlärd i 3 valfria Mystikfärdigheter."
+	handelsetabeller.svartkonstsammanslutningar[34].subval[0][1][2].beskrivninghakvaldbas="Lättlärd i 3 valfria Mystikfärdigheter."
+	
+
+	handelsetabeller.svartkonstsammanslutningar[35] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[35].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[35].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[35].rubrik = "Hedniska riter"
+	handelsetabeller.svartkonstsammanslutningar[35].beskrivning = "Rollpersonen har hänfallit åt hedniska riter som strider mot den inhemska religionen. Det kan röra sig om blodsoffer, böner till mörka makter eller schamanistiska ritualer. Om detta blir påkommet så kan rollpersonen riskera sitt liv och dessutom bli misstrodd och fruktad."
+	handelsetabeller.svartkonstsammanslutningar[35].beskrivninghak = "\+2 Psyke, \+1 Vilja. Lättlärd i Ockultism"
+	handelsetabeller.svartkonstsammanslutningar[35].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[35].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[35].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[35].subval[0][0][0].ockultism = {};
+	handelsetabeller.svartkonstsammanslutningar[35].subval[0][0][0].ockultism.lattlard=1; 
+	handelsetabeller.svartkonstsammanslutningar[35].subval[0][0][0].vilja = {};
+	handelsetabeller.svartkonstsammanslutningar[35].subval[0][0][0].vilja.varde =1; 
+	handelsetabeller.svartkonstsammanslutningar[35].subval[0][0][0].psyke = {};
+	handelsetabeller.svartkonstsammanslutningar[35].subval[0][0][0].psyke.varde =2; 
+	handelsetabeller.svartkonstsammanslutningar[35].subval[0][0][0].ovrigt="Har ägnat sig åt hedniska riter som strider mot den inhemska religionen.";
+
+	handelsetabeller.svartkonstsammanslutningar[36] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[36].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[36].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[36].rubrik = "Heligt föremål"
+	handelsetabeller.svartkonstsammanslutningar[36].beskrivning = "Rollpersonen har ett föremål som används inom trosutövandet i dennes religion. Det kan till exempel vara en helig skrift, en religiös symbol eller en offerkniv."
+	handelsetabeller.svartkonstsammanslutningar[36].beskrivninghak = "Lättlärd i Teologi. Rollpersonen får ett heligt föremål"
+	handelsetabeller.svartkonstsammanslutningar[36].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[36].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[36].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[36].subval[0][0][0].teologi = {};
+	handelsetabeller.svartkonstsammanslutningar[36].subval[0][0][0].teologi.lattlard=1; 
+	handelsetabeller.svartkonstsammanslutningar[36].subval[0][0][0].heligaforemal=1; 
+	
+
+	handelsetabeller.svartkonstsammanslutningar[37] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[37].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[37].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[37].rubrik = "Hemligt bibliotek"
+	handelsetabeller.svartkonstsammanslutningar[37].beskrivning = "Rollpersonen har tillgång till ett hemligt bibliotek."
+	handelsetabeller.svartkonstsammanslutningar[37].beskrivninghak = "Välj mellan 4 enheter Kunskapsfärdigheter och 4 enheter Mystikfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[37].beskrivninghakvaldbas = "";
+	
+	handelsetabeller.svartkonstsammanslutningar[37].subval[0][0][0] = {};
+	handelsetabeller.svartkonstsammanslutningar[37].subval[0][0][0].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[37].subval[0][0][0].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[37].subval[0][0][0].resurs="Har tillgång till ett hemligt bibliotek.";
+	
+	handelsetabeller.svartkonstsammanslutningar[37].subval[0].push([]);
+	handelsetabeller.svartkonstsammanslutningar[37].subval[0][1][0] = {};
+	handelsetabeller.svartkonstsammanslutningar[37].subval[0][1][0].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[37].subval[0][1][0].vald = 0;
+	
+	handelsetabeller.svartkonstsammanslutningar[37].subval[0][1][0].antalsubval=1;
+	
+	handelsetabeller.svartkonstsammanslutningar[37].subval[0][1][1] = {};
+	handelsetabeller.svartkonstsammanslutningar[37].subval[0][1][1].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[37].subval[0][1][1].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[37].subval[0][1][1].kunskapsfardigheterenheter=4;
+	handelsetabeller.svartkonstsammanslutningar[37].subval[0][1][1].rubrik="4 enheter Kunskapsfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[37].subval[0][1][1].beskrivninghakvaldbas="4 enheter Kunskapsfärdigheter."
+	
+	handelsetabeller.svartkonstsammanslutningar[37].subval[0][1][2] = {};
+	handelsetabeller.svartkonstsammanslutningar[37].subval[0][1][2].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[37].subval[0][1][2].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[37].subval[0][1][2].mystikfardigheterenheter=4;
+	handelsetabeller.svartkonstsammanslutningar[37].subval[0][1][2].rubrik="4 enheter Mystikfärdigheter"	
+	handelsetabeller.svartkonstsammanslutningar[37].subval[0][1][2].beskrivninghakvaldbas="4 enheter Mystikfärdigheter."	
+	
+
+	handelsetabeller.svartkonstsammanslutningar[38] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[38].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[38].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[38].rubrik = "Historisk förebild"
+	handelsetabeller.svartkonstsammanslutningar[38].beskrivning = "Rollpersonen har en historisk förebild som denne har studerat och försökt lära så mycket det bara går om. Detta kan vara ett helgon, en filosof, en stor ledare eller liknande. Rollpersonen är beredd att betala stora summor och ta stora risker för att få en djupare insikt i denna individs liv."
+	handelsetabeller.svartkonstsammanslutningar[38].beskrivninghak = "\+2 i två valfria grundattribut, knutet till förebildens ideal. Rollpersonen har en Expertis med samma namn som den historiska förebilden och får 4T6 i denna."
+	handelsetabeller.svartkonstsammanslutningar[38].beskrivninghakvaldbas = "Rollpersonen har en Expertis med samma namn som den historiska förebilden och får 4T6 i denna. "
+	
+	handelsetabeller.svartkonstsammanslutningar[38].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[38].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[38].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[38].subval[0][0][0].ovrigt="Har en historisk förebild. Rollpersonen har en Expertis med samma namn som den historiska förebilden och får 4T6 i denna. ";
+	
+	handelsetabeller.svartkonstsammanslutningar[38].subval.push([[]]);
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][0][0].antalsubval=2;
+	
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1].push([]);
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][1][0] = {};
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][1][0].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][1][0].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][1][0].styrka = {};
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][1][0].styrka.varde=2;
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][1][0].rubrik="\+2 Styrka"
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][1][0].beskrivninghakvaldbas="\+2 Styrka. "
+	
+	
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1].push([]);
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][2][0] = {};
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][2][0].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][2][0].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][2][0].talighet = {};
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][2][0].talighet.varde=2;
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][2][0].rubrik="\+2 Tålighet"
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][2][0].beskrivninghakvaldbas="\+2 Tålighet. "
+	
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1].push([]);
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][3][0] = {};
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][3][0].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][3][0].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][3][0].rorlighet = {};
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][3][0].rorlighet.varde=2;
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][3][0].rubrik="\+2 Rörlighet"
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][3][0].beskrivninghakvaldbas="\+2 Rörlighet. "
+	
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1].push([]);
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][4][0] = {};
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][4][0].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][4][0].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][4][0].uppfattning = {};
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][4][0].uppfattning.varde=2;
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][4][0].rubrik="\+2 Uppfattning"
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][4][0].beskrivninghakvaldbas="\+2 Uppfattning. "
+	
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1].push([]);
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][5][0] = {};
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][5][0].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][5][0].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][5][0].vilja = {};
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][5][0].vilja.varde=2;
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][5][0].rubrik="\+2 Vilja"
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][5][0].beskrivninghakvaldbas="\+2 Vilja. "
+	
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1].push([]);
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][6][0] = {};
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][6][0].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][6][0].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][6][0].psyke = {};
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][6][0].psyke.varde=2;
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][6][0].rubrik="\+2 Psyke"
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][6][0].beskrivninghakvaldbas="\+2 Psyke. "
+	
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1].push([]);
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][7][0] = {};
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][7][0].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][7][0].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][7][0].visdom = {};
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][7][0].visdom.varde=2;
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][7][0].rubrik="\+2 Visdom"
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][7][0].beskrivninghakvaldbas="\+2 Visdom. "
+	
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1].push([]);
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][8][0] = {};
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][8][0].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][8][0].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][8][0].utstralning = {};
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][8][0].utstralning.varde=2;
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][8][0].rubrik="\+2 Utstrålning"
+	handelsetabeller.svartkonstsammanslutningar[38].subval[1][8][0].beskrivninghakvaldbas="\+2 Utstrålning. "
+	
+	
+
+	handelsetabeller.svartkonstsammanslutningar[39] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[39].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[39].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[39].rubrik = "Hoppfull"
+	handelsetabeller.svartkonstsammanslutningar[39].beskrivning = "Rollpersonen har ett starkt självförtroende och ett hopp som aldrig sviker."
+	handelsetabeller.svartkonstsammanslutningar[39].beskrivninghak = "\+2T6 Självkontroll vid Nedbrytning"
+	handelsetabeller.svartkonstsammanslutningar[39].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[39].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[39].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[39].subval[0][0][0].sjalvkontroll = {};
+	handelsetabeller.svartkonstsammanslutningar[39].subval[0][0][0].sjalvkontroll.egenskap ="\+2T6 vid Nedbrytning"; 
+
+	handelsetabeller.svartkonstsammanslutningar[40] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[40].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[40].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[40].rubrik = "Hängiven följeslagare"
+	handelsetabeller.svartkonstsammanslutningar[40].beskrivning = "Rollpersonen har haft en hängiven följeslagare som har försökt göra allt för att bevisa sig för denne. Rollpersonen har försökt lära följeslagaren hur man klarar sig själv då denne är mer hängiven än klok. Vad som har hänt med följeslagaren är upp till spelaren."
+	handelsetabeller.svartkonstsammanslutningar[40].beskrivninghak = "Lättlärd i Undervisa. 2 enheter Sociala färdigheter, 2 enheter Kunskapsfärdigheter. Slå två gånger på bakgrundstabellen och välj en som visar vilken typ av följeslagare det rörde sig om."
+	handelsetabeller.svartkonstsammanslutningar[40].beskrivninghakvaldbas = "Lättlärd i Undervisa. 2 enheter Sociala färdigheter, 2 enheter Kunskapsfärdigheter."
+	
+	handelsetabeller.svartkonstsammanslutningar[40].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[40].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[40].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[40].subval[0][0][0].undervisa = {};
+	handelsetabeller.svartkonstsammanslutningar[40].subval[0][0][0].undervisa.lattlard=1; 
+	handelsetabeller.svartkonstsammanslutningar[40].subval[0][0][0].socialafardigheterenheter=2;
+	handelsetabeller.svartkonstsammanslutningar[40].subval[0][0][0].kunskapsfardigheterenheter=2;
+	handelsetabeller.svartkonstsammanslutningar[40].subval[0][0][0].kontaktbas="Har en hängiven följeslagare som är kontakt1_rubrikliten.";
+	handelsetabeller.svartkonstsammanslutningar[40].subval[0][0][0].kontaktenhetbool=[0];
+	handelsetabeller.svartkonstsammanslutningar[40].subval[0][0][0].beskrivningvaldbas = "Rollpersonen har haft en hängiven följeslagare som är kontakt1_rubrikliten som har försökt göra allt för att bevisa sig för rollpersonen. Rollpersonen har försökt lära följeslagaren hur man klarar sig själv då denne är mer hängiven än klok. Vad som har hänt med följeslagaren är upp till spelaren."
+	
+	
+	handelsetabeller.svartkonstsammanslutningar[41] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[41].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[41].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[41].rubrik = "Insikt i köttet"
+	handelsetabeller.svartkonstsammanslutningar[41].beskrivning = "Rollpersonen har ett skarpt psyke och en stadig hand och har lärt sig kirurgins ovanliga konst. Denne är kunnig i både trepanering, öppning av buk och bröst samt hur man syr igen sår och botar inre skador."
+	handelsetabeller.svartkonstsammanslutningar[41].beskrivninghak = "Lättlärd i Kirurgi. Rollpersonen får aldrig några komplikationer när denne utför operationer"
+	handelsetabeller.svartkonstsammanslutningar[41].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[41].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[41].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[41].subval[0][0][0].kirurgi = {};
+	handelsetabeller.svartkonstsammanslutningar[41].subval[0][0][0].kirurgi.lattlard=1; 
+	handelsetabeller.svartkonstsammanslutningar[41].subval[0][0][0].formaga="Rollpersonen får aldrig några komplikationer när denne utför operationer.";
+
+	handelsetabeller.svartkonstsammanslutningar[42] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[42].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[42].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[42].rubrik = "Intensiva studier"
+	handelsetabeller.svartkonstsammanslutningar[42].beskrivning = "Rollpersonen fascineras oerhört av ett fåtal ämnen som denne har införskaffat stor kunskap om genom intensiva studier. Det finns få saker som rollpersonen finner lika intressant som att tala om sina favoritämnen och sprida detta intresse till nära och bekanta. Tyvärr har rollpersonens ensidiga intresse inneburit att de mer sociala delarna av rollpersonens liv försummats."
+	handelsetabeller.svartkonstsammanslutningar[42].beskrivninghak = "\+2 Psyke, \+2 Visdom, –2 Utstrålning. 3 enheter Kunskapsfärdigheter. Lättlärd i 2 valfria Kunskapsfärdigheter. Svårlärd i 2 valfria Sociala färdigheter"
+	handelsetabeller.svartkonstsammanslutningar[42].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[42].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[42].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[42].subval[0][0][0] = {};
+	handelsetabeller.svartkonstsammanslutningar[42].subval[0][0][0].lattlardkunskapsfardigheter=2; 
+	handelsetabeller.svartkonstsammanslutningar[42].subval[0][0][0] = {};
+	handelsetabeller.svartkonstsammanslutningar[42].subval[0][0][0].lattlardsocialafardigheter=-2; 
+	handelsetabeller.svartkonstsammanslutningar[42].subval[0][0][0].kunskapsfardigheterenheter = 3; 
+	handelsetabeller.svartkonstsammanslutningar[42].subval[0][0][0].psyke = {};
+	handelsetabeller.svartkonstsammanslutningar[42].subval[0][0][0].psyke.varde =2; 
+	handelsetabeller.svartkonstsammanslutningar[42].subval[0][0][0].visdom = {};
+	handelsetabeller.svartkonstsammanslutningar[42].subval[0][0][0].visdom.varde =2; 
+	handelsetabeller.svartkonstsammanslutningar[42].subval[0][0][0].utstralning = {};
+	handelsetabeller.svartkonstsammanslutningar[42].subval[0][0][0].utstralning.varde =-2; 
+
+	handelsetabeller.svartkonstsammanslutningar[43] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[43].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[43].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[43].rubrik = "Iögonfallande drag"
+	handelsetabeller.svartkonstsammanslutningar[43].beskrivning = "Rollpersonens drag är något utöver det vanliga och denne utmärker sig ofta vid olika sammankomster."
+	handelsetabeller.svartkonstsammanslutningar[43].beskrivninghak = "3 poäng Kännetecken. Varje gång rollpersonen använder Fokus för något Kännetecken får denne ytterligare \+1T6 bonus"
+	handelsetabeller.svartkonstsammanslutningar[43].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[43].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[43].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[43].subval[0][0][0].kanneteckenpoang = 3; 
+	handelsetabeller.svartkonstsammanslutningar[43].subval[0][0][0].utseende="Rollpersonens drag är något utöver det vanliga och denne utmärker sig ofta vid olika sammankomster.";
+	handelsetabeller.svartkonstsammanslutningar[43].subval[0][0][0].formaga="Varje gång rollpersonen använder Fokus för något Kännetecken får denne ytterligare \+1T6 bonus";
+
+	handelsetabeller.svartkonstsammanslutningar[44] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[44].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[44].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[44].rubrik = "Jordesoldatens välsignelse"
+	handelsetabeller.svartkonstsammanslutningar[44].beskrivning = "Rollpersonen sägs vara välsignad av Jordesoldaten och har en hel del gemensamt med honom."
+	handelsetabeller.svartkonstsammanslutningar[44].beskrivninghak = "Expertisen Behaga 4T6, Hantverket Skomakare 4T6. 2 enheter Stridsfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[44].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[44].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[44].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[44].subval[0][0][0].stridsfardigheterenheter = 2; 
+	handelsetabeller.svartkonstsammanslutningar[44].subval[0][0][0].behaga = {};
+	handelsetabeller.svartkonstsammanslutningar[44].subval[0][0][0].behaga.enheter = 3; 
+	handelsetabeller.svartkonstsammanslutningar[44].subval[0][0][0].skomakare = {};
+	handelsetabeller.svartkonstsammanslutningar[44].subval[0][0][0].skomakare.enheter = 3; 
+	handelsetabeller.svartkonstsammanslutningar[44].subval[0][0][0].ovrigt="Sägs vara välsignad av Jordesoldaten";
+
+	handelsetabeller.svartkonstsammanslutningar[45] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[45].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[45].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[45].rubrik = "Järnvilja"
+	handelsetabeller.svartkonstsammanslutningar[45].beskrivning = "Rollpersonen har en vilja av järn och är mycket svår att skrämma, påverka och bryta ned."
+	handelsetabeller.svartkonstsammanslutningar[45].beskrivninghak = "\+1T6 Vilja"
+	handelsetabeller.svartkonstsammanslutningar[45].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[45].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[45].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[45].subval[0][0][0].vilja = {};
+	handelsetabeller.svartkonstsammanslutningar[45].subval[0][0][0].vilja.varde = 4; 
+
+	handelsetabeller.svartkonstsammanslutningar[46] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[46].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[46].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[46].rubrik = "Kastat förbannelse"
+	handelsetabeller.svartkonstsammanslutningar[46].beskrivning = "Rollpersonen har i vredesmod uttalat en förbannelse mot en nära vän, och orden blev egendomligt nog till verklighet. Vännen har brutit med rollpersonen efter alla problem som uppstått. Rollpersonen har studerat en hel del mystik för att råda bot på förbannelse och rentvå sitt samvete men ännu utan resultat."
+	handelsetabeller.svartkonstsammanslutningar[46].beskrivninghak = "Vad förbannelsen går ut på får spelaren bestämma men det kan exempelvis röra sig om impotens, stumhet eller att personen hemsöks av mardrömmar. Välj mellan 4 enheter Kunskapsfärdigheter och 4 enheter Mystikfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[46].beskrivninghakvaldbas = "Vad förbannelsen går ut på får spelaren bestämma men det kan exempelvis röra sig om impotens, stumhet eller att personen hemsöks av mardrömmar. ";
+	
+	handelsetabeller.svartkonstsammanslutningar[46].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[46].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[46].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[46].subval[0][0][0].kontakt="Har kastat en förbannelse mot en nära vän.";
+	
+	handelsetabeller.svartkonstsammanslutningar[46].subval[0].push([]);
+	handelsetabeller.svartkonstsammanslutningar[46].subval[0][1][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[46].subval[0][1][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[46].subval[0][1][0].vald = 0; 
+	
+	handelsetabeller.svartkonstsammanslutningar[46].subval[0][1][0].antalsubval=1;
+	
+	handelsetabeller.svartkonstsammanslutningar[46].subval[0][1][1] = {};
+	handelsetabeller.svartkonstsammanslutningar[46].subval[0][1][1].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[46].subval[0][1][1].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[46].subval[0][1][1].kunskapsfardigheterenheter=4;
+	handelsetabeller.svartkonstsammanslutningar[46].subval[0][1][1].rubrik="4 enheter Kunskapsfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[46].subval[0][1][1].beskrivninghakvaldbas="4 enheter Kunskapsfärdigheter. "
+	
+	handelsetabeller.svartkonstsammanslutningar[46].subval[0][1][2] = {};
+	handelsetabeller.svartkonstsammanslutningar[46].subval[0][1][2].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[46].subval[0][1][2].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[46].subval[0][1][2].mystikfardigheterenheter=4;
+	handelsetabeller.svartkonstsammanslutningar[46].subval[0][1][2].rubrik="4 enheter Mystikfärdigheter"	
+	handelsetabeller.svartkonstsammanslutningar[46].subval[0][1][2].beskrivninghakvaldbas="4 enheter Mystikfärdigheter. "	
+	
+
+	handelsetabeller.svartkonstsammanslutningar[47] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[47].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[47].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[47].rubrik = "Kommit över hemlighet"
+	handelsetabeller.svartkonstsammanslutningar[47].beskrivning = "Rollpersonen har kommit över en hemlighet som inte var menad för denne. De som vill undanhålla hemligheten har dock börjat komma rollpersonen på spåren och de kommer garanterat se till att deras hemlighet inte sprids vidare."
+	handelsetabeller.svartkonstsammanslutningar[47].beskrivninghak = "4 enheter Kunskapsfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[47].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[47].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[47].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[47].subval[0][0][0].kunskapsfardigheterenheter = 4; 
+	handelsetabeller.svartkonstsammanslutningar[47].subval[0][0][0].resurs="Har kommit över en hemlighet som inte var menad för denne.";
+
+	handelsetabeller.svartkonstsammanslutningar[48] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[48].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[48].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[48].rubrik = "Koncentrerad"
+	handelsetabeller.svartkonstsammanslutningar[48].beskrivning = "Rollpersonen är mycket fokuserad när det gäller."
+	handelsetabeller.svartkonstsammanslutningar[48].beskrivninghak = "När rollpersonen använder Fokus för att ge bonus till en Kunskapsfärdighet får denne ytterligare \+1T6 bonus"
+	handelsetabeller.svartkonstsammanslutningar[48].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[48].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[48].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[48].subval[0][0][0].formaga="När rollpersonen använder Fokus för att ge bonus till en Kunskapsfärdighet får denne ytterligare \+1T6 bonus.";
+
+	handelsetabeller.svartkonstsammanslutningar[49] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[49].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[49].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[49].rubrik = "Kontakt med det mystiska"
+	handelsetabeller.svartkonstsammanslutningar[49].beskrivning = "Rollpersonen har, när denne koncentrerar sig, en osedvanlig förmåga att tämja och kontrollera världens och gudarnas mystiska gåvor."
+	handelsetabeller.svartkonstsammanslutningar[49].beskrivninghak = "När rollpersonen använder Fokus för att ge bonus till Mystikfärdigheter så får denne ytterligare \+1T6 bonus"
+	handelsetabeller.svartkonstsammanslutningar[49].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[49].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[49].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[49].subval[0][0][0].formaga = "När rollpersonen använder Fokus för att ge bonus till Mystikfärdigheter så får denne ytterligare \+1T6 bonus"
+	
+	handelsetabeller.svartkonstsammanslutningar[50] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[50].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[50].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[50].rubrik = "Konverterad"
+	handelsetabeller.svartkonstsammanslutningar[50].beskrivning = "En gång i tiden var rollpersonen vilse men fann till slut lyckan och stabiliteten i sin tro. Denne är nu djupt troende och det är upp till spelaren om denne tillhörde en annan religion innan konverteringen."
+	handelsetabeller.svartkonstsammanslutningar[50].beskrivningvaldbas = "";
+	
+	handelsetabeller.svartkonstsammanslutningar[50].beskrivninghak = "3 enheter Kunskapsfärdigheter. Lättlärd i Teologi. Slå två gånger på bakgrundstabellen och välj en som visar vem som konverterade rollpersonen. Det sekundära karaktärsdraget är Övertygelse och är Låst"
+	handelsetabeller.svartkonstsammanslutningar[50].beskrivninghakvaldbas = "3 enheter Kunskapsfärdigheter. Lättlärd i Teologi. Det sekundära karaktärsdraget är Övertygelse och är Låst. "
+	
+	handelsetabeller.svartkonstsammanslutningar[50].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[50].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[50].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[50].subval[0][0][0].kunskapsfardigheterenheter=3;
+	handelsetabeller.svartkonstsammanslutningar[50].subval[0][0][0].teologi = {};
+	handelsetabeller.svartkonstsammanslutningar[50].subval[0][0][0].teologi.lattlard=1;
+	handelsetabeller.svartkonstsammanslutningar[50].subval[0][0][0].kontaktbas="Har blivit konverterad av kontakt1_obestamd.";
+	handelsetabeller.svartkonstsammanslutningar[50].subval[0][0][0].kontaktenhetbool=[0];
+	handelsetabeller.svartkonstsammanslutningar[50].subval[0][0][0].beskrivningvaldbas = "En gång i tiden var rollpersonen vilse men fann efter att ha blivit konverterad av kontakt1_obestamd till slut lyckan och stabiliteten i sin tro. Rollpersonen är nu djupt troende och det är upp till spelaren om denne tillhörde en annan religion innan konverteringen. "
+	
+	handelsetabeller.svartkonstsammanslutningar[50].subval[0][0][0].karaktarsdrag="Det sekundära karaktärsdraget är Övertygelse och är Låst.";
+	
+	handelsetabeller.svartkonstsammanslutningar[51] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[51].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[51].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[51].rubrik = "Kraftens mästare"
+	handelsetabeller.svartkonstsammanslutningar[51].beskrivning = "Rollpersonen är en nod för Mundanas mystiska krafter. Denne har en naturlig fallenhet för att kontrollera dessa och kan med rätt träning och erfarenhet bli en av Mundanas främsta."
+	handelsetabeller.svartkonstsammanslutningar[51].beskrivninghak = "Lättlärd i alla Mystikfärdigheter. 2 mysterier"
+	handelsetabeller.svartkonstsammanslutningar[51].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[51].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[51].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[51].subval[0][0][0] = {};
+	handelsetabeller.svartkonstsammanslutningar[51].subval[0][0][0].lattlardallamystikfardigheter=1; 
+	handelsetabeller.svartkonstsammanslutningar[51].subval[0][0][0].mysterier=2;
+
+	handelsetabeller.svartkonstsammanslutningar[52] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[52].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[52].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[52].rubrik = "Kraft från väven"
+	handelsetabeller.svartkonstsammanslutningar[52].beskrivning = "Rollpersonens kropp hålls vid liv av den magiska vävens energier."
+	handelsetabeller.svartkonstsammanslutningar[52].beskrivninghak = "Denne behöver inte behöver äta eller dricka för att ge sin kropp näring. De enda tillfällen då detta är nödvändigt är om rollpersonen befinner sig på magidöda områden. Då dessa områden är väldigt ovanliga så är detta sällan något problem"
+	handelsetabeller.svartkonstsammanslutningar[52].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[52].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[52].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[52].subval[0][0][0].formaga="Behöver inte behöver äta eller dricka för att ge sin kropp näring, förutom då denne befinner sig på magidöda områden.";
+	
+	handelsetabeller.svartkonstsammanslutningar[53] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[53].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[53].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[53].rubrik = "Kunskap om de mörka makterna"
+	handelsetabeller.svartkonstsammanslutningar[53].beskrivning = "Rollpersonen har studerat demoner, spöken, andar och gastar samt hemliga sällskap och kulter. Denne har en stor samling böcker i ämnet som om de skulle bli påkomna bli svåra att förklara."
+	handelsetabeller.svartkonstsammanslutningar[53].beskrivninghak = "\+1 Visdom. Lättlärd i Filosofi och Ockultism"
+	handelsetabeller.svartkonstsammanslutningar[53].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[53].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[53].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[53].subval[0][0][0].filosofi = {};
+	handelsetabeller.svartkonstsammanslutningar[53].subval[0][0][0].filosofi.lattlard=1; 
+	handelsetabeller.svartkonstsammanslutningar[53].subval[0][0][0].ockultism = {};
+	handelsetabeller.svartkonstsammanslutningar[53].subval[0][0][0].ockultism.lattlard=1; 
+	handelsetabeller.svartkonstsammanslutningar[53].subval[0][0][0].visdom = {};
+	handelsetabeller.svartkonstsammanslutningar[53].subval[0][0][0].visdom.varde =1; 
+
+	handelsetabeller.svartkonstsammanslutningar[54] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[54].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[54].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[54].rubrik = "Känslokall"
+	handelsetabeller.svartkonstsammanslutningar[54].beskrivning = "Rollpersonen är ovanligt känslokall och oberörd."
+	handelsetabeller.svartkonstsammanslutningar[54].beskrivninghak = "Fördela 3 Avtrubbningskryss fritt"
+	handelsetabeller.svartkonstsammanslutningar[54].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[54].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[54].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[54].subval[0][0][0].avtrubbningvalfri=3;
+
+	handelsetabeller.svartkonstsammanslutningar[55] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[55].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[55].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[55].rubrik = "Ljusbringarens välsignelse"
+	handelsetabeller.svartkonstsammanslutningar[55].beskrivning = "Rollpersonen sägs vara välsignad av Ljusbringaren och har en hel del gemensamt med honom."
+	handelsetabeller.svartkonstsammanslutningar[55].beskrivninghak = "Expertiserna Tolka religiösa skrifter och Uppvigla 4T6 vardera. Lättlärd i Krigföring"
+	handelsetabeller.svartkonstsammanslutningar[55].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[55].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[55].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[55].subval[0][0][0].krigforing = {};
+	handelsetabeller.svartkonstsammanslutningar[55].subval[0][0][0].krigforing.lattlard=1; 
+	handelsetabeller.svartkonstsammanslutningar[55].subval[0][0][0].uppvigla = {};
+	handelsetabeller.svartkonstsammanslutningar[55].subval[0][0][0].uppvigla.enheter = 3; 
+	handelsetabeller.svartkonstsammanslutningar[55].subval[0][0][0].tolkareligiosaskrifter = {};
+	handelsetabeller.svartkonstsammanslutningar[55].subval[0][0][0].tolkareligiosaskrifter.enheter = 3; 
+	handelsetabeller.svartkonstsammanslutningar[55].subval[0][0][0].ovrigt="Sägs vara välsignad av Ljusbringaren.";
+
+	handelsetabeller.svartkonstsammanslutningar[56] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[56].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[56].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[56].rubrik = "Lyft förbannelse"
+	handelsetabeller.svartkonstsammanslutningar[56].beskrivning = "En förbannelse har varit kastad över en familj, person eller plats. Rollpersonen har med hjälp av efterforskningar lyckats lyfta förbannelsen och har samtidigt fått en insikt i det övernaturliga."
+	handelsetabeller.svartkonstsammanslutningar[56].beskrivninghak = "Lättlärd i Ockultism. 4 enheter Kunskapsfärdigheter. 1 Avtrubbningskryss för övernaturligt"
+	handelsetabeller.svartkonstsammanslutningar[56].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[56].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[56].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[56].subval[0][0][0].kunskapsfardigheterenheter = 4; 
+	handelsetabeller.svartkonstsammanslutningar[56].subval[0][0][0].ockultism = {};
+	handelsetabeller.svartkonstsammanslutningar[56].subval[0][0][0].ockultism.lattlard=1; 
+	handelsetabeller.svartkonstsammanslutningar[56].subval[0][0][0].avtrubbningovernaturligt = 1; 
+	handelsetabeller.svartkonstsammanslutningar[56].subval[0][0][0].ovrigt="Har lyft en förbannelse.";
+
+	handelsetabeller.svartkonstsammanslutningar[57] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[57].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[57].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[57].rubrik = "Läkande beröring"
+	handelsetabeller.svartkonstsammanslutningar[57].beskrivning = "Rollpersonen har en mystisk förmåga som vid längre kontakt får sår att läka snabbare och smärta att försvinna. Om detta framställs på fel sätt finns det risk att rollpersonen blir anklagad för häxeri av Daakkyrkan."
+	handelsetabeller.svartkonstsammanslutningar[57].beskrivninghak = "Lättlärd i Läkekonst. Om rollpersonen vårdar eller på annat sätt är konstant intill med en annan person så ökar personens Läkningstakt med 2"
+	handelsetabeller.svartkonstsammanslutningar[57].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[57].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[57].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[57].subval[0][0][0].lakekonst = {};
+	handelsetabeller.svartkonstsammanslutningar[57].subval[0][0][0].lakekonst.lattlard=1;
+	handelsetabeller.svartkonstsammanslutningar[57].subval[0][0][0].formaga="Om rollpersonen vårdar eller på annat sätt är konstant intill med en annan person så ökar personens Läkningstakt med 2.";
+	
+	handelsetabeller.svartkonstsammanslutningar[58] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[58].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[58].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[58].rubrik = "Lärling"
+	handelsetabeller.svartkonstsammanslutningar[58].beskrivning = "Rollpersonen har en lärling som försöker lära sig dennes värv. Lärlingen följer med rollpersonen på dennes resor och passar även upp och hjälper till i rollpersonens sysslor. Lärlingen är dock ingen slav utan har egen vilja och kan även ha en egen agenda. Vad för typ av lärling det är får spelaren bestämma."
+	handelsetabeller.svartkonstsammanslutningar[58].beskrivninghak = "\+2 Psyke. Lättlärd i Undervisa"
+	handelsetabeller.svartkonstsammanslutningar[58].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[58].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[58].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[58].subval[0][0][0].undervisa = {};
+	handelsetabeller.svartkonstsammanslutningar[58].subval[0][0][0].undervisa.lattlard=1; 
+	handelsetabeller.svartkonstsammanslutningar[58].subval[0][0][0].psyke = {};
+	handelsetabeller.svartkonstsammanslutningar[58].subval[0][0][0].psyke.varde =2; 
+	handelsetabeller.svartkonstsammanslutningar[58].subval[0][0][0].kontakt="Har en lärling.";
+
+	handelsetabeller.svartkonstsammanslutningar[59] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[59].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[59].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[59].rubrik = "Lärling åt lärd man"
+	handelsetabeller.svartkonstsammanslutningar[59].beskrivning = "Personen har blivit utbildad av en lärd man."
+	handelsetabeller.svartkonstsammanslutningar[59].beskrivninghak = "\+2 Visdom. Lättlärd i Filosofi. 3 enheter Kunskapsfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[59].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[59].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[59].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[59].subval[0][0][0].kunskapsfardigheterenheter = 3; 
+	handelsetabeller.svartkonstsammanslutningar[59].subval[0][0][0].filosofi = {};
+	handelsetabeller.svartkonstsammanslutningar[59].subval[0][0][0].filosofi.lattlard=1; 
+	handelsetabeller.svartkonstsammanslutningar[59].subval[0][0][0].visdom = {};
+	handelsetabeller.svartkonstsammanslutningar[59].subval[0][0][0].visdom.varde =2; 
+	handelsetabeller.svartkonstsammanslutningar[59].subval[0][0][0].kontakt="Har blivit utbildad av en lärd man.";
+
+	handelsetabeller.svartkonstsammanslutningar[60] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[60].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[60].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[60].rubrik = "Lärling åt mystiker"
+	handelsetabeller.svartkonstsammanslutningar[60].beskrivning = "Rollpersonen har varit lärling hos en mystiker under sina många resor."
+	handelsetabeller.svartkonstsammanslutningar[60].beskrivninghak = "2 enheter Kunskapsfärdigheter och 2 enheter Mystikfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[60].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[60].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[60].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[60].subval[0][0][0].kunskapsfardigheterenheter=2;
+	handelsetabeller.svartkonstsammanslutningar[60].subval[0][0][0].mystikfardigheterenheter=2;
+	handelsetabeller.svartkonstsammanslutningar[60].subval[0][0][0].kontakt="Har varit lärling hos en mystiker.";
+
+	
+	handelsetabeller.svartkonstsammanslutningar[61] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[61].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[61].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[61].rubrik = "Medicinskt kunnande"
+	handelsetabeller.svartkonstsammanslutningar[61].beskrivning = "Rollpersonen vet hur man vårdar de sjuka och skadade och har en intuitiv känsla för vilka läkeväxter som hjälper mot respektive åkommor. Rollpersonen har företagit en längre resa i jakten på läkeväxter och de mixturer man kan framställa av dessa."
+	handelsetabeller.svartkonstsammanslutningar[61].beskrivninghak = "Lättlärd i Läkekonst och Naturlära. 3 enheter Vildmarksfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[61].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[61].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[61].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[61].subval[0][0][0].vildmarksfardigheterenheter = 3; 
+	handelsetabeller.svartkonstsammanslutningar[61].subval[0][0][0].lakekonst = {};
+	handelsetabeller.svartkonstsammanslutningar[61].subval[0][0][0].lakekonst.lattlard=1; 
+	handelsetabeller.svartkonstsammanslutningar[61].subval[0][0][0].naturlara = {};
+	handelsetabeller.svartkonstsammanslutningar[61].subval[0][0][0].naturlara.lattlard=1; 
+
+	handelsetabeller.svartkonstsammanslutningar[62] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[62].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[62].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[62].rubrik = "Mentor"
+	handelsetabeller.svartkonstsammanslutningar[62].beskrivning = "Rollpersonen har en mentor som har väglett personen genom livet. Mentorn behöver inte vara en läromästare som så utan kan vara en vän, tjänare eller ett resesällskap. Rollpersonen känner tacksamhet inför sin mentor och skulle göra allt för att hjälpa denne."
+	handelsetabeller.svartkonstsammanslutningar[62].beskrivning = "";
+	
+	handelsetabeller.svartkonstsammanslutningar[62].beskrivninghak = "Slå två gånger på bakgrundstabellen och välj en som visar vem mentorn är. Rollpersonen får välja en av färdighetsgrupperna från denna bakgrund"
+	handelsetabeller.svartkonstsammanslutningar[62].beskrivninghakvaldbas = "";
+	
+	handelsetabeller.svartkonstsammanslutningar[62].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[62].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[62].subval[0][0][0].vald = 0; 
+	
+	handelsetabeller.svartkonstsammanslutningar[62].subval[0].push([]);
+	handelsetabeller.svartkonstsammanslutningar[62].subval[0][1][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[62].subval[0][1][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[62].subval[0][1][0].vald = 0; 
+	
+	handelsetabeller.svartkonstsammanslutningar[62].subval[0][1][0].kontaktbas="Har en mentor som är kontakt1_rubrikliten.";
+	handelsetabeller.svartkonstsammanslutningar[62].subval[0][1][0].kontaktenhetbool=[1];
+	handelsetabeller.svartkonstsammanslutningar[62].subval[0][1][0].antalsubval=1;
+	handelsetabeller.svartkonstsammanslutningar[62].subval[0][1][0].subvalrubrik="Välj vad rollpersonen lärt sig av sin mentor:";
+	handelsetabeller.svartkonstsammanslutningar[62].subval[0][1][0].beskrivningvaldbas = "Rollpersonen har en mentor som har väglett personen genom livet. Mentorn är kontakt1_rubrikliten och behöver inte vara en läromästare som så utan kan vara en vän, tjänare eller ett resesällskap. Rollpersonen känner tacksamhet inför sin mentor och skulle göra allt för att hjälpa denne. "
+	
+	
+	handelsetabeller.svartkonstsammanslutningar[63] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[63].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[63].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[63].rubrik = "Milargoks välsignelse"
+	handelsetabeller.svartkonstsammanslutningar[63].beskrivning = "Rollpersonen sägs vara välsignad av profeten Milargok och har en hel del gemensamt med honom."
+	handelsetabeller.svartkonstsammanslutningar[63].beskrivninghak = "Expertisen Författa 4T6. Kännetecknet Sjukligt utseende 4T6. Lättlärd i Teologi och Undervisa"
+	handelsetabeller.svartkonstsammanslutningar[63].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[63].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[63].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[63].subval[0][0][0].teologi = {};
+	handelsetabeller.svartkonstsammanslutningar[63].subval[0][0][0].teologi.lattlard=1; 
+	handelsetabeller.svartkonstsammanslutningar[63].subval[0][0][0].undervisa = {};
+	handelsetabeller.svartkonstsammanslutningar[63].subval[0][0][0].undervisa.lattlard=1; 
+	handelsetabeller.svartkonstsammanslutningar[63].subval[0][0][0].forfatta = {};
+	handelsetabeller.svartkonstsammanslutningar[63].subval[0][0][0].forfatta.enheter = 3; 
+	handelsetabeller.svartkonstsammanslutningar[63].subval[0][0][0].sjukligtutseende = {};
+	handelsetabeller.svartkonstsammanslutningar[63].subval[0][0][0].sjukligtutseende.enheter = 3; 
+	handelsetabeller.svartkonstsammanslutningar[63].subval[0][0][0].ovrigt="Sägs vara välsignad av Milargok.";
+
+	handelsetabeller.svartkonstsammanslutningar[64] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[64].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[64].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[64].rubrik = "Minnesförlust"
+	handelsetabeller.svartkonstsammanslutningar[64].beskrivning = "Det finns en tid i rollpersonens liv som är blankt. Rollpersonen har inget minne av vad som skett under denna period och detta kan röra sig om några dagar till ett flertal år."
+	handelsetabeller.svartkonstsammanslutningar[64].beskrivninghak = "4 valfria enheter som representerar sådant som rollpersonen lärt sig under den tid som glömts. 1 Avtrubbningskryss för utsatthet"
+	handelsetabeller.svartkonstsammanslutningar[64].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[64].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[64].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[64].subval[0][0][0].valfriaenheter=4; 
+	handelsetabeller.svartkonstsammanslutningar[64].subval[0][0][0].avtrubbningutsatthet = 1; 
+	handelsetabeller.svartkonstsammanslutningar[64].subval[0][0][0].ovrigt="Lider av en minnesförlust från en del av livet.";	
+
+	handelsetabeller.svartkonstsammanslutningar[65] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[65].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[65].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[65].rubrik = "Mörk hemlighet"
+	handelsetabeller.svartkonstsammanslutningar[65].beskrivning = "Rollpersonen har en mörk hemlighet som denne har dolt för omvärlden. Om den avslöjas kommer hela rollpersonens liv att rasera, exakta detaljer är upp till spelaren. En person känner till hemligheten och denne tvekar inte att nyttja rollpersonen för diverse tjänster och uppdrag med det ständiga hotet att avslöja vad rollpersonen gjort."
+	handelsetabeller.svartkonstsammanslutningar[65].beskrivningvaldbas = "Rollpersonen har en mörk hemlighet som denne har dolt för omvärlden. Om den avslöjas kommer hela rollpersonens liv att rasera, exakta detaljer är upp till spelaren. ";
+	handelsetabeller.svartkonstsammanslutningar[65].beskrivninghak = "\+2 i valfritt grundattribut och 4 valfria enheter som är kopplade till hemligheten. Slå två gånger på bakgrundstabellen och välj en som visar vem känner till rollpersonens hemlighet"
+	handelsetabeller.svartkonstsammanslutningar[65].beskrivninghak = "4 valfria enheter som är kopplade till hemligheten. ";
+	
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][0][0].valfriaenheter=4;
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][0][0].kontakt="kontakt1_Obestamd känner till rollpersonens mörka hemlighet.";
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][0][0].beskrivningvaldbas = "kontakt1_Obestamd känner till hemligheten och denne tvekar inte att nyttja rollpersonen för diverse tjänster och uppdrag med det ständiga hotet att avslöja vad rollpersonen gjort. ";
+	
+	
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0].push([]);
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][0].vald = 0; 
+	
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][0].antalsubval=1;
+	
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][1] = {};
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][1].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][1].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][1].styrka = {};
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][1].styrka.varde=2;
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][1].rubrik="\+2 Styrka"
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][1].beskrivninghakvaldbas="\+2 Styrka. "
+	
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][2] = {};
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][2].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][2].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][2].talighet = {};
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][2].talighet.varde=2;
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][2].rubrik="\+2 Tålighet"
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][2].beskrivninghakvaldbas="\+2 Tålighet. "
+	
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][3] = {};
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][3].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][3].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][3].rorlighet = {};
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][3].rorlighet.varde=2;
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][3].rubrik="\+2 Rörlighet"
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][3].beskrivninghakvaldbas="\+2 Rörlighet. "
+	
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][4] = {};
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][4].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][4].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][4].uppfattning = {};
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][4].uppfattning.varde=2;
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][4].rubrik="\+2 Uppfattning"
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][4].beskrivninghakvaldbas="\+2 Uppfattning. "
+	
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][5] = {};
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][5].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][5].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][5].vilja = {};
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][5].vilja.varde=2;
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][5].rubrik="\+2 Vilja"
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][5].beskrivninghakvaldbas="\+2 Vilja. "
+	
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][6] = {};
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][6].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][6].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][6].psyke = {};
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][6].psyke.varde=2;
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][6].rubrik="\+2 Psyke"
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][6].beskrivninghakvaldbas="\+2 Psyke. "
+	
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][7] = {};
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][7].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][7].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][7].visdom = {};
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][7].visdom.varde=2;
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][7].rubrik="\+2 Visdom"
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][7].beskrivninghakvaldbas="\+2 Visdom. "
+	
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][8] = {};
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][8].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][8].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][8].utstralning = {};
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][8].utstralning.varde=2;
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][8].rubrik="\+2 Utstrålning"
+	handelsetabeller.svartkonstsammanslutningar[65].subval[0][1][8].beskrivninghakvaldbas="\+2 Utstrålning. "
+	
+	
+	
+
+	handelsetabeller.svartkonstsammanslutningar[66] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[66].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[66].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[66].rubrik = "Möte med det fasansfulla"
+	handelsetabeller.svartkonstsammanslutningar[66].beskrivning = "Rollpersonen har stött på något fasansfullt och övernaturligt. Det kan handla om en demon som föds fram ur en människokropp, en gast av en tidigare vän eller något annat ohyggligt. Detta har gjort rollpersonen något skakad men samtidigt härdad."
+	handelsetabeller.svartkonstsammanslutningar[66].beskrivninghak = "–2 Vilja. 3 Avtrubbningskryss för övernaturligt"
+	handelsetabeller.svartkonstsammanslutningar[66].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[66].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[66].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[66].subval[0][0][0].vilja = {};
+	handelsetabeller.svartkonstsammanslutningar[66].subval[0][0][0].vilja.varde =-2; 
+	handelsetabeller.svartkonstsammanslutningar[66].subval[0][0][0].avtrubbningovernaturligt = 3; 
+	handelsetabeller.svartkonstsammanslutningar[66].subval[0][0][0].ovrigt="Har stött på något fasansfullt och övernaturligt.";
+
+	handelsetabeller.svartkonstsammanslutningar[67] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[67].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[67].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[67].rubrik = "Möte med det okända"
+	handelsetabeller.svartkonstsammanslutningar[67].beskrivning = "Rollpersonen har haft ett möte med de okända. Det kan röra sig om en religiös uppenbarelse, en demonisk nedkallning eller en färd in i Skugglandet. Detta har förändrat rollpersonen för alltid på något sätt."
+	handelsetabeller.svartkonstsammanslutningar[67].beskrivninghak = "\+2 i valfritt grundattribut eller 4 valfria enheter. 1 poäng Kännetecken"
+	handelsetabeller.svartkonstsammanslutningar[67].beskrivninghakvaldbas = "1 poäng Kännetecken. "
+	
+	handelsetabeller.svartkonstsammanslutningar[67].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[67].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[67].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[67].subval[0][0][0].ovrigt="Har haft ett möte med det okända.";
+	handelsetabeller.svartkonstsammanslutningar[67].subval[0][0][0].kanneteckenpoang=1;;
+	
+	handelsetabeller.svartkonstsammanslutningar[67].subval.push([[]]); 
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1].push([]); 
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][0][0] = {};
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][0][0].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][0][0].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][0][0].antalsubval=1;
+	
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][0] = {};
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][0].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][0].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][0].antalsubval=1;
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][0].rubrik="\+2 i valfritt grundattribut. ";
+	
+	
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][1] = {};
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][1].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][1].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][1].styrka = {};
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][1].styrka.varde=2;
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][1].rubrik="\+2 Styrka"
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][1].beskrivninghakvaldbas="\+2 Styrka. "
+	
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][2] = {};
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][2].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][2].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][2].talighet = {};
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][2].talighet.varde=2;
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][2].rubrik="\+2 Tålighet"
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][2].beskrivninghakvaldbas="\+2 Tålighet. "
+	
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][3] = {};
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][3].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][3].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][3].rorlighet = {};
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][3].rorlighet.varde=2;
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][3].rubrik="\+2 Rörlighet"
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][3].beskrivninghakvaldbas="\+2 Rörlighet. "
+	
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][4] = {};
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][4].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][4].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][4].uppfattning = {};
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][4].uppfattning.varde=2;
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][4].rubrik="\+2 Uppfattning"
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][4].beskrivninghakvaldbas="\+2 Uppfattning. "
+	
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][5] = {};
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][5].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][5].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][5].vilja = {};
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][5].vilja.varde=2;
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][5].rubrik="\+2 Vilja"
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][5].beskrivninghakvaldbas="\+2 Vilja. "
+	
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][6] = {};
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][6].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][6].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][6].psyke = {};
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][6].psyke.varde=2;
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][6].rubrik="\+2 Psyke"
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][6].beskrivninghakvaldbas="\+2 Psyke. "
+	
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][7] = {};
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][7].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][7].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][7].visdom = {};
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][7].visdom.varde=2;
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][7].rubrik="\+2 Visdom"
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][7].beskrivninghakvaldbas="\+2 Visdom. "
+	
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][8] = {};
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][8].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][8].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][8].utstralning = {};
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][8].utstralning.varde=2;
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][8].rubrik="\+2 Utstrålning"
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][1][8].beskrivninghakvaldbas="\+2 Utstrålning. "
+	
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1].push([]);
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][2][0] = {};
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][2][0].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][2][0].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][2][0].valfriaenheter=4;
+	handelsetabeller.svartkonstsammanslutningar[67].subval[1][2][0].rubrik="4 valfria enheter. ";
+	
+
+	handelsetabeller.svartkonstsammanslutningar[68] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[68].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[68].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[68].rubrik = "Mött spåkvinna"
+	handelsetabeller.svartkonstsammanslutningar[68].beskrivning = "En spåkvinna har förutsett de skeenden som kommer drabba personen och även dennes död. Välj om rollpersonen tror på spådomarna och har försökt lära sig mer om dem eller om rollpersonen anser att denne själv har full kontroll på sitt öde."
+	handelsetabeller.svartkonstsammanslutningar[68].beskrivningvaldbas = "En spåkvinna har förutsett de skeenden som kommer drabba personen och även dennes död. ";
+	
+	handelsetabeller.svartkonstsammanslutningar[68].beskrivninghak = "Tror på spådomarna: 3 enheter Mystikfärdigheter. 1 Avtrubbningskryss för övernaturligt. Tror på sitt eget öde: 4 enheter Kunskapsfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[68].beskrivninghakvaldbas = "";
+	
+	handelsetabeller.svartkonstsammanslutningar[68].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[68].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[68].subval[0][0][0].vald = 0; 
+	
+	handelsetabeller.svartkonstsammanslutningar[68].subval[0].push([]);
+	handelsetabeller.svartkonstsammanslutningar[68].subval[0][1][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[68].subval[0][1][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[68].subval[0][1][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[68].subval[0][1][0].antalsubval=1; 
+	
+	
+	handelsetabeller.svartkonstsammanslutningar[68].subval[0][1][1] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[68].subval[0][1][1].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[68].subval[0][1][1].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[68].subval[0][1][1].rubrik="Tror på spådomarna"; 
+	handelsetabeller.svartkonstsammanslutningar[68].subval[0][1][1].ovrigt="Har blivit spådd av en spåkvinna och trott på spådomarna"
+	handelsetabeller.svartkonstsammanslutningar[68].subval[0][1][1].mystikfardigheterenheter = 3; 
+	handelsetabeller.svartkonstsammanslutningar[68].subval[0][1][1].avtrubbningovernaturligt = 1; 
+	handelsetabeller.svartkonstsammanslutningar[68].subval[0][1][1].beskrivningvaldbas = "Rollpersonen tror på spådomarna och har försökt lära sig mer om dem. ";
+	handelsetabeller.svartkonstsammanslutningar[68].subval[0][1][1].beskrivninghakvaldbas = "3 enheter Mystikfärdigheter. 1 Avtrubbningskryss för övernaturligt. ";
+	
+	handelsetabeller.svartkonstsammanslutningar[68].subval[0][1][2] = {};
+	handelsetabeller.svartkonstsammanslutningar[68].subval[0][1][2].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[68].subval[0][1][2].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[68].subval[0][1][2].rubrik="Tror på sitt eget öde";	
+	handelsetabeller.svartkonstsammanslutningar[68].subval[0][1][2].ovrigt="Har blivit spådd av en spåkvinna men trott på sitt ege öde.";
+	handelsetabeller.svartkonstsammanslutningar[68].subval[0][1][2].kunskapsfardigheterenheter = 4; 
+	handelsetabeller.svartkonstsammanslutningar[68].subval[0][1][2].beskrivningvaldbas = "Rollpersonen anser dock att denne själv har full kontroll på sitt öde. ";
+	handelsetabeller.svartkonstsammanslutningar[68].subval[0][1][2].beskrivninghakvaldbas = "4 enheter Kunskapsfärdigheter";
+	
+	
+	handelsetabeller.svartkonstsammanslutningar[69] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[69].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[69].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[69].rubrik = "Mött svartkonstnär"
+	handelsetabeller.svartkonstsammanslutningar[69].beskrivning = "Personen stötte ihop med en svartkonstnär och hade valet av att avslöja denne för inkvisitionen eller ta lärdom av denne."
+	handelsetabeller.svartkonstsammanslutningar[69].beskrivningvaldbas = "";
+	
+	handelsetabeller.svartkonstsammanslutningar[69].beskrivninghak = "Överlämnat svartkonstnären till inkvisitionen: 4T6×10 silver. 2 enheter Sociala färdigheter. Tagit lärdom av svartkonstnären: 4 enheter Mystikfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[69].beskrivninghakvaldbas = "";
+	handelsetabeller.svartkonstsammanslutningar[69].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[69].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[69].subval[0][0][0].vald = 0; 
+	
+	handelsetabeller.svartkonstsammanslutningar[69].subval[0].push([]);
+	handelsetabeller.svartkonstsammanslutningar[69].subval[0][1][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[69].subval[0][1][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[69].subval[0][1][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[69].subval[0][1][0].antalsubval=1;
+	
+	
+	handelsetabeller.svartkonstsammanslutningar[69].subval[0][1][1] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[69].subval[0][1][1].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[69].subval[0][1][1].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[69].subval[0][1][1].rubrik="Överlämnat svartkonstnären till inkvisitionen";
+	handelsetabeller.svartkonstsammanslutningar[69].subval[0][1][1].kontakt="Har överlämnat en svartkonstnär till invisitionen.";
+	
+	handelsetabeller.svartkonstsammanslutningar[69].subval[0][1][1].pengarslag="4T6x10"; 
+	
+	handelsetabeller.svartkonstsammanslutningar[69].subval[0][1][1].socialafardigheterenheter = 2; 
+	handelsetabeller.svartkonstsammanslutningar[69].subval[0][1][1].beskrivningvaldbas = "Personen har stött ihop med en svartkonstnär och valde att avslöja denne för inkvisitionen.";
+	handelsetabeller.svartkonstsammanslutningar[69].subval[0][1][1].beskrivninghakvaldbas = "pengar_resultat silver. 2 enheter Sociala färdigheter. ";
+	
+	
+	handelsetabeller.svartkonstsammanslutningar[69].subval[0][1][2] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[69].subval[0][1][2].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[69].subval[0][1][2].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[69].subval[0][1][2].rubrik="Tagit lärdom av svartkonstnären"
+	handelsetabeller.svartkonstsammanslutningar[69].subval[0][1][2].mystikfardigheterenheter = 4; 
+	handelsetabeller.svartkonstsammanslutningar[69].subval[0][1][2].kontakt="Har tagit lärdom av en svartkonstnär.";
+	handelsetabeller.svartkonstsammanslutningar[69].subval[0][1][2].beskrivningvaldbas = "Personen har tagit lärdom av en svartkonstnär. ";
+	handelsetabeller.svartkonstsammanslutningar[69].subval[0][1][2].beskrivninghakvaldbas = "4 enheter Mystikfärdigheter. ";
+	
+	
+	handelsetabeller.svartkonstsammanslutningar[70] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[70].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[70].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[70].rubrik = "Närvaro"
+	handelsetabeller.svartkonstsammanslutningar[70].beskrivning = "Rollpersonen har en särdeles stark närvaro på gränsen till det mystiska. Det tycks omöjligt för andra att inte lägga märke till rollpersonen oavsett om det rör sig om ett enkelt samtal vid bordet eller ett tal inför massan."
+	handelsetabeller.svartkonstsammanslutningar[70].beskrivninghak = "\+1T6 Intryck"
+	handelsetabeller.svartkonstsammanslutningar[70].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[70].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[70].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[70].subval[0][0][0].intryck = {};
+	handelsetabeller.svartkonstsammanslutningar[70].subval[0][0][0].intryck.bonus = 4; 
+
+	handelsetabeller.svartkonstsammanslutningar[71] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[71].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[71].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[71].rubrik = "Offerriter"
+	handelsetabeller.svartkonstsammanslutningar[71].beskrivning = "Rollpersonen har lärt sig att utföra offerriter till någon typ av varelse eller väsen. Detta kan vara till en gudom, demon, skuggväsen, spöke eller gast. Offret lättar rollpersonens sinne och skänker energi och kraft tillbaka. Själva riten tar omkring 10 minuter att utföra."
+	handelsetabeller.svartkonstsammanslutningar[71].beskrivninghak = "En gång per spelmöte kan rollpersonen återfå Fokus genom att offra levande varelser. Litet djur ger 1 Fokus. Medelstort djur ger 2 Fokus. Stort djur ger 4 Fokus. Människa eller annan humanoid ger 8 Fokus"
+	handelsetabeller.svartkonstsammanslutningar[71].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[71].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[71].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[71].subval[0][0][0].formaga="En gång per spelmöte kan rollpersonen återfå Fokus genom att offra levande varelser. Litet djur ger 1 Fokus. Medelstort djur ger 2 Fokus. Stort djur ger 4 Fokus. Människa eller annan humanoid ger 8 Fokus";
+	
+	handelsetabeller.svartkonstsammanslutningar[72] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[72].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[72].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[72].rubrik = "Orsakat olycka"
+	handelsetabeller.svartkonstsammanslutningar[72].beskrivning = "Rollpersonen har orsakat en allvarlig olycka som kostat en eller flera personer livet. Det kan röra sig om en brand, en drunkningsolycka eller ett skämt som gått fel. Många anklagar rollpersonen för detta."
+	handelsetabeller.svartkonstsammanslutningar[72].beskrivninghak = "\+2 Vilja. 2 Avtrubbningskryss för utsatthet, 1 Avtrubbningskryss för våld"
+	handelsetabeller.svartkonstsammanslutningar[72].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[72].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[72].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[72].subval[0][0][0].vilja = {};
+	handelsetabeller.svartkonstsammanslutningar[72].subval[0][0][0].vilja.varde =2; 
+	handelsetabeller.svartkonstsammanslutningar[72].subval[0][0][0].avtrubbningutsatthet = 2; 
+	handelsetabeller.svartkonstsammanslutningar[72].subval[0][0][0].avtrubbningvald = 1; 
+	handelsetabeller.svartkonstsammanslutningar[72].subval[0][0][0].ovrigt="Har orsakat en allvarlig olycka.";
+
+	handelsetabeller.svartkonstsammanslutningar[73] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[73].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[73].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[73].rubrik = "Pakt med mörka makter"
+	handelsetabeller.svartkonstsammanslutningar[73].beskrivning = "Rollpersonen har slutit en pakt med en mörk makt såsom en demon eller förbjuden gudom. Detta väsen har tre tjänster att utkräva av rollpersonen för den kunskap och makt som denne vunnit av pakten. Vilka tjänsterna är bestäms av spelaren och spelledaren."
+	handelsetabeller.svartkonstsammanslutningar[73].beskrivninghak = "\+2 Vilja, \+2 Psyke. 1 Avtrubbningskryss för övernaturligt. Välj mellan 4 mysterier eller 3 valfria enheter"
+	handelsetabeller.svartkonstsammanslutningar[73].beskrivninghakvaldbas = "\+2 Vilja, \+2 Psyke. 1 Avtrubbningskryss för övernaturligt. ";
+	
+	handelsetabeller.svartkonstsammanslutningar[73].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[73].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[73].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[73].subval[0][0][0].vilja = {};
+	handelsetabeller.svartkonstsammanslutningar[73].subval[0][0][0].vilja.varde=2; 
+	handelsetabeller.svartkonstsammanslutningar[73].subval[0][0][0].psyke = {};
+	handelsetabeller.svartkonstsammanslutningar[73].subval[0][0][0].psyke.varde=2;	
+	handelsetabeller.svartkonstsammanslutningar[73].subval[0][0][0].avtrubbningovernaturligt=1;
+	
+	handelsetabeller.svartkonstsammanslutningar[73].subval[0].push([]);
+	handelsetabeller.svartkonstsammanslutningar[73].subval[0][1][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[73].subval[0][1][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[73].subval[0][1][0].vald = 0; 
+	
+	handelsetabeller.svartkonstsammanslutningar[73].subval[0][1][0].antalsubval=1;
+	
+	handelsetabeller.svartkonstsammanslutningar[73].subval[0][1][1] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[73].subval[0][1][1].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[73].subval[0][1][1].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[73].subval[0][1][1].rubrik="4 mysterier";
+	handelsetabeller.svartkonstsammanslutningar[73].subval[0][1][1].beskrivninghakvaldbas="4 mysterier. ";
+	handelsetabeller.svartkonstsammanslutningar[73].subval[0][1][1].mysterier=4;
+	
+	handelsetabeller.svartkonstsammanslutningar[73].subval[0][1][2] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[73].subval[0][1][2].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[73].subval[0][1][2].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[73].subval[0][1][2].rubrik="3 valfria enheter";
+	handelsetabeller.svartkonstsammanslutningar[73].subval[0][1][2].beskrivninghakvaldbas="3 valfria enheter. ";
+	handelsetabeller.svartkonstsammanslutningar[73].subval[0][1][2].valfriaenheter=3;
+	
+	
+
+	handelsetabeller.svartkonstsammanslutningar[74] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[74].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[74].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[74].rubrik = "Pakt med väsen"
+	handelsetabeller.svartkonstsammanslutningar[74].beskrivning = "Personen har slutit en pakt med någon typ av väsen; det kan röra sig om ett skogsrå, ett skuggväsen, ett troll eller kanske en drake. Exakt vad pakten rör sig om är upp till spelaren och spelledaren."
+	handelsetabeller.svartkonstsammanslutningar[74].beskrivninghak = "4 valfria enheter knutna till pakten"
+	handelsetabeller.svartkonstsammanslutningar[74].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[74].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[74].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[74].subval[0][0][0].valfriaenheter=4; 
+	handelsetabeller.svartkonstsammanslutningar[74].subval[0][0][0].kontakt="Har slutit en pakt med någon typ av väsen.";
+
+	handelsetabeller.svartkonstsammanslutningar[75] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[75].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[75].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[75].rubrik = "Provat underliga droger"
+	handelsetabeller.svartkonstsammanslutningar[75].beskrivning = "Rollpersonen har provat en underlig drogmixtur som har haft en sällsam effekt. Under ett rus upplevde rollpersonen skrämmande och fascinerande händelser och efter upplevelsen så var denne förändrad. Exakt vad denne fick för insikt under ruset är upp till spelaren."
+	handelsetabeller.svartkonstsammanslutningar[75].beskrivninghak = "\+2 Vilja, Psyke, Visdom eller Utstrålning"
+	handelsetabeller.svartkonstsammanslutningar[75].beskrivninghak = "";
+	
+	handelsetabeller.svartkonstsammanslutningar[75].subval[0][0][0] = {};
+	handelsetabeller.svartkonstsammanslutningar[75].subval[0][0][0].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[75].subval[0][0][0].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[75].subval[0][0][0].ovrigt="Har provat underliga droger.";
+	
+	handelsetabeller.svartkonstsammanslutningar[75].subval[0].push([]);
+	handelsetabeller.svartkonstsammanslutningar[75].subval[0][1][0] = {};
+	handelsetabeller.svartkonstsammanslutningar[75].subval[0][1][0].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[75].subval[0][1][0].vald = 0;
+	
+	handelsetabeller.svartkonstsammanslutningar[75].subval[0][1][0].antalsubval=1;
+	
+	handelsetabeller.svartkonstsammanslutningar[75].subval[0][1][1] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[75].subval[0][1][1].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[75].subval[0][1][1].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[75].subval[0][1][1].rubrik="\+2 Vilja"; 
+	handelsetabeller.svartkonstsammanslutningar[75].subval[0][1][1].beskrivninghakvaldbas="\+2 Vilja. "; 
+	handelsetabeller.svartkonstsammanslutningar[75].subval[0][1][1].vilja = {};
+	handelsetabeller.svartkonstsammanslutningar[75].subval[0][1][1].vilja.varde=2;
+	
+	handelsetabeller.svartkonstsammanslutningar[75].subval[0][1][2] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[75].subval[0][1][2].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[75].subval[0][1][2].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[75].subval[0][1][2].rubrik="\+2 Visdom"; 
+	handelsetabeller.svartkonstsammanslutningar[75].subval[0][1][2].beskrivninghakvaldbas="\+2 Visdom. "; 
+	handelsetabeller.svartkonstsammanslutningar[75].subval[0][1][2].visdom = {};
+	handelsetabeller.svartkonstsammanslutningar[75].subval[0][1][2].visdom.varde=2;
+	
+	handelsetabeller.svartkonstsammanslutningar[75].subval[0][1][3] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[75].subval[0][1][3].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[75].subval[0][1][3].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[75].subval[0][1][3].rubrik="\+2 Utstrålning"; 
+	handelsetabeller.svartkonstsammanslutningar[75].subval[0][1][3].beskrivninghakvaldbas="\+2 Utstrålning. "; 
+	handelsetabeller.svartkonstsammanslutningar[75].subval[0][1][3].utstralning = {};
+	handelsetabeller.svartkonstsammanslutningar[75].subval[0][1][3].utstralning.varde=2;
+	
+	
+
+	handelsetabeller.svartkonstsammanslutningar[76] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[76].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[76].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[76].rubrik = "Pyrotropisk dragning"
+	handelsetabeller.svartkonstsammanslutningar[76].beskrivning = "Rollpersonen har en onaturlig dragning till eldens element och eld tycks inte skada rollpersonen till samma grad som andra. Fascinationen har dock lett till att rollpersonen tenderar att försöka lösa sina problem med just eld."
+	handelsetabeller.svartkonstsammanslutningar[76].beskrivninghak = "Rollpersonen får ett Eldskydd på 2T6. En gång per spelmöte kan rollpersonen få igen 3 Fokus genom att lösa ett problem med eld, exempelvis bränna ner ett hus eller sätta eld på en person"
+	handelsetabeller.svartkonstsammanslutningar[76].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[76].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[76].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[76].subval[0][0][0].formaga="Har ett Eldskydd på 2T6." + "\n" + "En gång per spelmöte kan rollpersonen få igen 3 Fokus genom att lösa ett problem med eld, exempelvis bränna ner ett hus eller sätta eld på en person";
+	
+	handelsetabeller.svartkonstsammanslutningar[77] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[77].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[77].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[77].rubrik = "Religiös upplevelse"
+	handelsetabeller.svartkonstsammanslutningar[77].beskrivning = "Rollpersonen har under sina färder varit med om en religiös upplevelse. Det kan vara i form av ett mirakel som denne skådat, en syn som denne upplevt eller något liknande."
+	handelsetabeller.svartkonstsammanslutningar[77].beskrivninghak = "Lättlärd i Teologi. 4 enheter Kunskapsfärdigheter då denne försökt lära sig så mycket som möjligt från upplevelsen"
+	handelsetabeller.svartkonstsammanslutningar[77].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[77].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[77].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[77].subval[0][0][0].kunskapsfardigheterenheter = 4; 
+	handelsetabeller.svartkonstsammanslutningar[77].subval[0][0][0].teologi = {};
+	handelsetabeller.svartkonstsammanslutningar[77].subval[0][0][0].teologi.lattlard=1; 
+	handelsetabeller.svartkonstsammanslutningar[77].subval[0][0][0].ovrigt="Har varit med om en religiös händelse.";
+
+	handelsetabeller.svartkonstsammanslutningar[78] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[78].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[78].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[78].rubrik = "Relik"
+	handelsetabeller.svartkonstsammanslutningar[78].beskrivning = "Rollpersonen har kommit över ett kraftfullt heligt föremål. Reliken är både omtalad och känd bland dem inom religionen. Exakt hur rollpersonen kommit över denna bör definieras."
+	handelsetabeller.svartkonstsammanslutningar[78].beskrivninghak = "Lättlärd i Teologi. Rollpersonen får en valfri relik"
+	handelsetabeller.svartkonstsammanslutningar[78].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[78].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[78].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[78].subval[0][0][0].teologi = {};
+	handelsetabeller.svartkonstsammanslutningar[78].subval[0][0][0].teologi.lattlard=1; 
+	handelsetabeller.svartkonstsammanslutningar[78].subval[0][0][0].resurs="Har kommit över en relik";
+
+	handelsetabeller.svartkonstsammanslutningar[79] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[79].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[79].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[79].rubrik = "Repellera vandöd"
+	handelsetabeller.svartkonstsammanslutningar[79].beskrivning = "Rollpersonen besitter en förmåga att få vandöda att hålla sig borta."
+	handelsetabeller.svartkonstsammanslutningar[79].beskrivninghak = "Vandöda med rang 16 eller lägre kan inte attackera rollpersonen. Vandöda av högre rang påverkas inte av förmågan. ";
+	handelsetabeller.svartkonstsammanslutningar[79].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[79].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[79].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[79].subval[0][0][0].formaga = "Vandöda med rang 16 eller lägre kan inte attackera rollpersonen. Vandöda av högre rang påverkas inte av förmågan. "; 
+
+
+	handelsetabeller.svartkonstsammanslutningar[80] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[80].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[80].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[80].rubrik = "Sedd som helgon"
+	handelsetabeller.svartkonstsammanslutningar[80].beskrivning = "Rollpersonen anses av en eller annan anledning utfört ett mirakel och det finns de som menar på att denne är i förbund med högre makter. Rollpersonen har fått ett mindre följe fanatiker som följer efter denne och har en tendens att dyka upp vid exakt fel tidpunkt. De skulle gå i döden för rollpersonen och är övertygad att denne är i förbund med makterna."
+	handelsetabeller.svartkonstsammanslutningar[80].beskrivningvaldbas = "Rollpersonen anses av en eller annan anledning utfört ett mirakel och det finns de som menar på att denne är i förbund med högre makter. ";
+	
+	handelsetabeller.svartkonstsammanslutningar[80].beskrivninghak = "1 Avtrubbningskryss för utsatthet. Slå tre gånger på bakgrundstabellen för att ta reda på de tre personer som är mest fanatiska och de som kommer gå längst för att hjälpa rollpersonen. De är dock smått galna och kan inte förväntas fungera normalt"
+	handelsetabeller.svartkonstsammanslutningar[80].beskrivninghakvaldbas = "1 Avtrubbningskryss för utsatthet. ";
+	handelsetabeller.svartkonstsammanslutningar[80].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[80].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[80].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[80].subval[0][0][0].avtrubbningutsatthet = 1; 
+	handelsetabeller.svartkonstsammanslutningar[80].subval[0][0][0].kontaktbas="Är sedd som helgon, bland de mest fanatiska finns kontakt1_obestamd, kontakt2_obestamd och kontakt3_obestamd";
+	handelsetabeller.svartkonstsammanslutningar[80].subval[0][0][0].kontaktenhetbool=[0,0,0];
+	handelsetabeller.svartkonstsammanslutningar[80].subval[0][0][0].beskrivningvaldbas="Rollpersonen har fått ett mindre följe fanatiker bestående av bland andra kontakt1_obestamd, kontakt2_obestamd och kontakt3_obestamd, vilka följer efter denne och har en tendens att dyka upp vid exakt fel tidpunkt. Fanatikerna är smått galna och kan inte förväntas agera normalt. De skulle gå i döden för rollpersonen och är övertygad att denne är i förbund med makterna. ";
+
+	handelsetabeller.svartkonstsammanslutningar[81] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[81].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[81].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[81].rubrik = "Skrock och sagor"
+	handelsetabeller.svartkonstsammanslutningar[81].beskrivning = "Rollpersonen är insatt i det mesta som rör sägner och vidskepelse och berättar gärna för andra vad som för tur respektive otur med sig."
+	handelsetabeller.svartkonstsammanslutningar[81].beskrivninghak = "Expertiserna Folktro och Vidskepelse 4T6 vardera. Lättlärd i Berättarkonst och Ockultism"
+	handelsetabeller.svartkonstsammanslutningar[81].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[81].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[81].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[81].subval[0][0][0].berattarkonst = {};
+	handelsetabeller.svartkonstsammanslutningar[81].subval[0][0][0].berattarkonst.lattlard=1; 
+	handelsetabeller.svartkonstsammanslutningar[81].subval[0][0][0].ockultism = {};
+	handelsetabeller.svartkonstsammanslutningar[81].subval[0][0][0].ockultism.lattlard=1; 
+	handelsetabeller.svartkonstsammanslutningar[81].subval[0][0][0].vidskepelse = {};
+	handelsetabeller.svartkonstsammanslutningar[81].subval[0][0][0].vidskepelse.enheter = 3; 
+
+	handelsetabeller.svartkonstsammanslutningar[82] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[82].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[82].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[82].rubrik = "Strikt läromästare"
+	handelsetabeller.svartkonstsammanslutningar[82].beskrivning = "Rollpersonen har haft en mycket strikt läromästare som förutom förespråkat utvecklingen av sinnet så måste man även stärka sin kropp med fysiska övningar."
+	handelsetabeller.svartkonstsammanslutningar[82].beskrivninghak = "\+1 Styrka, \+1 Tålighet, \+1 Rörlighet. 2 enheter Rörelsefärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[82].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[82].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[82].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[82].subval[0][0][0].rorelsefardigheterenheter = 2; 
+	handelsetabeller.svartkonstsammanslutningar[82].subval[0][0][0].styrka = {};
+	handelsetabeller.svartkonstsammanslutningar[82].subval[0][0][0].styrka.varde =1; 
+	handelsetabeller.svartkonstsammanslutningar[82].subval[0][0][0].talighet = {};
+	handelsetabeller.svartkonstsammanslutningar[82].subval[0][0][0].talighet.varde =1; 
+	handelsetabeller.svartkonstsammanslutningar[82].subval[0][0][0].rorlighet = {};
+	handelsetabeller.svartkonstsammanslutningar[82].subval[0][0][0].rorlighet.varde =1; 
+	handelsetabeller.svartkonstsammanslutningar[82].subval[0][0][0].kontakt="Har haft en mycket strikt läromästare.";
+
+	
+	handelsetabeller.svartkonstsammanslutningar[83] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[83].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[83].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[83].rubrik = "Smärtans klarhet"
+	handelsetabeller.svartkonstsammanslutningar[83].beskrivning = "Rollpersonen har lärt sig att tygla ett kaotiskt sinne med hjälp av smärta. Kanske är denne en fanatisk udarit eller har bara lärt sig att fysisk smärta kan rensa själen från grumliga tankar. Rollpersonen måste under en scen utföra någon typ av rit som att piska sig själv, skära sin arm eller liknande för att åtnjuta effekten av detta."
+	handelsetabeller.svartkonstsammanslutningar[83].beskrivninghak = "En gång per spelmöte kan rollpersonen åsamka sig själv ett kryss Smärta och får då genast igen 3 Fokus"
+	handelsetabeller.svartkonstsammanslutningar[83].subval[0][0][0] = {};
+	handelsetabeller.svartkonstsammanslutningar[83].subval[0][0][0].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[83].subval[0][0][0].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[83].subval[0][0][0].ovrigt="Har lärt sig att tygla ett kaotiskt sinne med hjälp av smärta.";
+	handelsetabeller.svartkonstsammanslutningar[83].subval[0][0][0].formaga="En gång per spelmöte kan rollpersonen åsamka sig själv ett kryss Smärta och får då genast igen 3 Fokus";
+
+	handelsetabeller.svartkonstsammanslutningar[84] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[84].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[84].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[84].rubrik = "Sorgetyngd"
+	handelsetabeller.svartkonstsammanslutningar[84].beskrivning = "En stor sorg vilar på rollpersonens axlar. Något i det förflutna kommer då och då tillbaka för att sprida sin svarta galla över rollpersonens sinne. Det kanske är någon som dött, ett beslut som rollpersonen ångrar eller en förälskelse som slutat olyckligt. Rollpersonen har sänkt sig i arbete för att dränka sorgen men den finns alltid där och skaver."
+	handelsetabeller.svartkonstsammanslutningar[84].beskrivninghak = "Rollpersonen får det störningen Deprimerad men allt arbete som denne lagt ned har gett avkastning. Välj mellan 6 enheter Kunskapsfärdigheter och 6 enheter Mystikfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[84].beskrivninghakvaldbas = "Rollpersonen får det störningen Deprimerad men allt arbete som denne lagt ned har gett avkastning. ";
+	
+	handelsetabeller.svartkonstsammanslutningar[84].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[84].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[84].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[84].subval[0][0][0].ovrigt="Har störningen Deprimerad";
+	
+	handelsetabeller.svartkonstsammanslutningar[84].subval[0].push([]);
+	handelsetabeller.svartkonstsammanslutningar[84].subval[0][1][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[84].subval[0][1][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[84].subval[0][1][0].vald = 0; 
+	
+	handelsetabeller.svartkonstsammanslutningar[84].subval[0][1][0].antalsubval=1;
+	
+	handelsetabeller.svartkonstsammanslutningar[84].subval[0][1][1] = {};
+	handelsetabeller.svartkonstsammanslutningar[84].subval[0][1][1].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[84].subval[0][1][1].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[84].subval[0][1][1].kunskapsfardigheterenheter=6;
+	handelsetabeller.svartkonstsammanslutningar[84].subval[0][1][1].rubrik="6 enheter Kunskapsfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[84].subval[0][1][1].beskrivninghakvaldbas="6 enheter Kunskapsfärdigheter. ";
+	
+	handelsetabeller.svartkonstsammanslutningar[84].subval[0][1][2] = {};
+	handelsetabeller.svartkonstsammanslutningar[84].subval[0][1][2].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[84].subval[0][1][2].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[84].subval[0][1][2].mystikfardigheterenheter=6;
+	handelsetabeller.svartkonstsammanslutningar[84].subval[0][1][2].rubrik="6 enheter Mystikfärdigheter"	
+	handelsetabeller.svartkonstsammanslutningar[84].subval[0][1][2].beskrivninghakvaldbas="6 enheter Mystikfärdigheter. ";	
+	
+
+	handelsetabeller.svartkonstsammanslutningar[85] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[85].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[85].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[85].rubrik = "Spetskunskap"
+	handelsetabeller.svartkonstsammanslutningar[85].beskrivning = "Rollpersonen har en förmåga att vara riktigt skicklig på obskyra färdigheter."
+	handelsetabeller.svartkonstsammanslutningar[85].beskrivninghak = "3 poäng Expertiser. Varje gång denne använder Fokus för någon Expertis får denne ytterligare \+1T6 bonus"
+	handelsetabeller.svartkonstsammanslutningar[85].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[85].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[85].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[85].subval[0][0][0].expertispoang = 3; 
+	handelsetabeller.svartkonstsammanslutningar[85].subval[0][0][0].formaga="Varje gång Fokus används för någon Expertis ges  ytterligare \+1T6 bonus."
+
+	handelsetabeller.svartkonstsammanslutningar[86] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[86].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[86].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[86].rubrik = "Språksinne"
+	handelsetabeller.svartkonstsammanslutningar[86].beskrivning = "Rollpersonen har en stor talang för språk."
+	handelsetabeller.svartkonstsammanslutningar[86].beskrivninghak = "\+2 Visdom. 6 Språkenheter"
+	handelsetabeller.svartkonstsammanslutningar[86].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[86].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[86].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[86].subval[0][0][0].visdom = {};
+	handelsetabeller.svartkonstsammanslutningar[86].subval[0][0][0].visdom.varde =2; 
+	handelsetabeller.svartkonstsammanslutningar[86].subval[0][0][0].sprakenheter=6;
+
+	handelsetabeller.svartkonstsammanslutningar[87] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[87].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[87].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[87].rubrik = "Synsk"
+	handelsetabeller.svartkonstsammanslutningar[87].beskrivning = "Rollpersonen har en förmåga att få glimtar från den nära framtiden och kan snabbt reagera på detta."
+	handelsetabeller.svartkonstsammanslutningar[87].beskrivninghak = "Personen har en förmåga att förnimma saker innan de sker. \+2T6 Vaksamhet"
+	handelsetabeller.svartkonstsammanslutningar[87].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[87].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[87].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[87].subval[0][0][0].vaksamhet = {};
+	handelsetabeller.svartkonstsammanslutningar[87].subval[0][0][0].vaksamhet.bonus = 8; 
+	handelsetabeller.svartkonstsammanslutningar[87].subval[0][0][0].formaga="Har en förmåga att förnimma saker innan de sker.";
+
+	handelsetabeller.svartkonstsammanslutningar[88] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[88].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[88].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[88].rubrik = "Tala med djuren"
+	handelsetabeller.svartkonstsammanslutningar[88].beskrivning = "Rollpersonen kan tala med djur av alla de slag."
+	handelsetabeller.svartkonstsammanslutningar[88].beskrivninghak = "Lättlärd i Naturlära. Expertisen Djurträning 4T6. Rollpersonen kan kommunicera med djur, observera dock att de flesta djur inte är särskilt intelligenta utan agerar mer på instinkt och kommunikationen blir därefter"
+	handelsetabeller.svartkonstsammanslutningar[88].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[88].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[88].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[88].subval[0][0][0].naturlara = {};
+	handelsetabeller.svartkonstsammanslutningar[88].subval[0][0][0].naturlara.lattlard=1; 
+	handelsetabeller.svartkonstsammanslutningar[88].subval[0][0][0].djurtraning = {};
+	handelsetabeller.svartkonstsammanslutningar[88].subval[0][0][0].djurtraning.enheter = 3; 
+	handelsetabeller.svartkonstsammanslutningar[88].subval[0][0][0].formaga="Kan tala med djur.";
+
+	
+	handelsetabeller.svartkonstsammanslutningar[89] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[89].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[89].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[89].rubrik = "Teoretiker"
+	handelsetabeller.svartkonstsammanslutningar[89].beskrivning = "Rollpersonen är mycket kunnig inom teori av mystisk karaktär."
+	handelsetabeller.svartkonstsammanslutningar[89].beskrivninghak = "Lättlärd i Teologi och Teoretisk magi. Expertisen Astrologi 4T6"
+	handelsetabeller.svartkonstsammanslutningar[89].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[89].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[89].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[89].subval[0][0][0].teologi = {};
+	handelsetabeller.svartkonstsammanslutningar[89].subval[0][0][0].teologi.lattlard=1; 
+	handelsetabeller.svartkonstsammanslutningar[89].subval[0][0][0].teoretiskmagi = {};
+	handelsetabeller.svartkonstsammanslutningar[89].subval[0][0][0].teoretiskmagi.lattlard=1; 
+	handelsetabeller.svartkonstsammanslutningar[89].subval[0][0][0].astrologi = {};
+	handelsetabeller.svartkonstsammanslutningar[89].subval[0][0][0].astrologi.enheter = 3; 
+
+	handelsetabeller.svartkonstsammanslutningar[90] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[90].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[90].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[90].rubrik = "Tid av galenskap"
+	handelsetabeller.svartkonstsammanslutningar[90].beskrivning = "Rollpersonen led under en tid av någon typ av galenskap som denne nu är fri från. Galenskapen har dock lyckats rasera rollpersonens rykte och många ser denne som tokig, farlig eller opålitlig. Vad som orsakade galenskapen och hur rollpersonen sedan blev fri från den är upp till spelaren. Rollpersonen har dock fått en insikt i sitt eget sinne och tänker klarare och snabbare än någonsin innan."
+	handelsetabeller.svartkonstsammanslutningar[90].beskrivninghak = "\+3 Psyke. Slå två slag på tabellen för störningar och välj en av dessa. Detta är den typ av galenskap som rollpersonen led av men nu är fri ifrån"
+	handelsetabeller.svartkonstsammanslutningar[90].subval[0][0][0] = {};
+	handelsetabeller.svartkonstsammanslutningar[90].subval[0][0][0].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[90].subval[0][0][0].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[90].subval[0][0][0].psyke = {};
+	handelsetabeller.svartkonstsammanslutningar[90].subval[0][0][0].psyke.varde=3;
+	handelsetabeller.svartkonstsammanslutningar[90].subval[0][0][0].ovrigt="Slå två slag på tabellen för störningar och välj en av dessa. Detta är den typ av galenskap som rollpersonen led av men nu är fri ifrån";	
+
+	handelsetabeller.svartkonstsammanslutningar[91] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[91].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[91].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[91].rubrik = "Tidskänsla"
+	handelsetabeller.svartkonstsammanslutningar[91].beskrivning = "Rollpersonen har en mycket exakt tidskänsla och kan så gott som alltid veta vilken tid på dagen det är även om denne är inomhus eller djupt under mark."
+	handelsetabeller.svartkonstsammanslutningar[91].beskrivninghak = "\+2 Uppfattning, \+2 Psyke"
+	handelsetabeller.svartkonstsammanslutningar[91].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[91].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[91].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[91].subval[0][0][0].uppfattning = {};
+	handelsetabeller.svartkonstsammanslutningar[91].subval[0][0][0].uppfattning.varde =2; 
+	handelsetabeller.svartkonstsammanslutningar[91].subval[0][0][0].psyke = {};
+	handelsetabeller.svartkonstsammanslutningar[91].subval[0][0][0].psyke.varde =2; 
+	handelsetabeller.svartkonstsammanslutningar[91].subval[0][0][0].formaga="Har en mycket exakt tidskänsla.";
+
+	handelsetabeller.svartkonstsammanslutningar[92] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[92].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[92].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[92].rubrik = "Tolkat stjärnorna"
+	handelsetabeller.svartkonstsammanslutningar[92].beskrivning = "Rollpersonen har tolkat stjärnorna och förutsett en viktig händelse. Av många ses rollpersonen på med beundran medan andra är avundsjuka och beskyller rollpersonen för att vara kättare."
+	handelsetabeller.svartkonstsammanslutningar[92].beskrivninghak = "Expertisen Astrologi 4T6. 3 enheter Kunskapsfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[92].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[92].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[92].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[92].subval[0][0][0].kunskapsfardigheterenheter = 3; 
+	handelsetabeller.svartkonstsammanslutningar[92].subval[0][0][0].astrologi = {};
+	handelsetabeller.svartkonstsammanslutningar[92].subval[0][0][0].astrologi.enheter = 3; 
+	handelsetabeller.svartkonstsammanslutningar[92].subval[0][0][0].ovrigt="Har tolkat stjärnorna och förutsett en viktig händelse.";
+	
+	handelsetabeller.svartkonstsammanslutningar[93] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[93].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[93].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[93].rubrik = "Torterad"
+	handelsetabeller.svartkonstsammanslutningar[93].beskrivning = "Rollpersonen har blivit infångad och torterad av någon anledning. Kanske är det inkvisitionen som försökt avslöja denne som kättare eller så har någon försökt tvinga ut kunskap och hemligheter ur rollpersonen. Kroppen bär fortfarande märken av tortyren men rollpersonen har blivit stärkt i sitt sinne och sin övertygelse."
+	handelsetabeller.svartkonstsammanslutningar[93].beskrivninghak = "2 valfria enheter. 1 Avtrubbningskryss vardera för både utsatthet och våld"
+	handelsetabeller.svartkonstsammanslutningar[93].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[93].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[93].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[93].subval[0][0][0].valfriaenheter=2; 
+	handelsetabeller.svartkonstsammanslutningar[93].subval[0][0][0].avtrubbningutsatthet=1; 
+	handelsetabeller.svartkonstsammanslutningar[93].subval[0][0][0].avtrubbningvald=1; 
+	handelsetabeller.svartkonstsammanslutningar[93].subval[0][0][0].ovrigt="Har blivit torterad.";
+	handelsetabeller.svartkonstsammanslutningar[93].subval[0][0][0].utseende="Märken från tortyr.";
+	
+
+	handelsetabeller.svartkonstsammanslutningar[94] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[94].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[94].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[94].rubrik = "Udars välsignelse"
+	handelsetabeller.svartkonstsammanslutningar[94].beskrivning = "Rollpersonen sägs vara välsignad av profeten Udar och har en hel del gemensamt med henne."
+	handelsetabeller.svartkonstsammanslutningar[94].beskrivninghak = "Expertisen Flagellera 4T6. Lättlärd i Argumentera. \+2 Vilja"
+	handelsetabeller.svartkonstsammanslutningar[94].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[94].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[94].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[94].subval[0][0][0].flagellera = {};
+	handelsetabeller.svartkonstsammanslutningar[94].subval[0][0][0].flagellera.enheter=3 ; 
+	handelsetabeller.svartkonstsammanslutningar[94].subval[0][0][0].argumentera = {};
+	handelsetabeller.svartkonstsammanslutningar[94].subval[0][0][0].argumentera.lattlard=1;
+	handelsetabeller.svartkonstsammanslutningar[94].subval[0][0][0].vilja = {};
+	handelsetabeller.svartkonstsammanslutningar[94].subval[0][0][0].vilja.varde=2;
+	handelsetabeller.svartkonstsammanslutningar[94].subval[0][0][0].ovrigt="Sägs vara välsignad av Udar.";
+	
+	handelsetabeller.svartkonstsammanslutningar[95] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[95].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[95].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[95].rubrik = "Udda kunnande"
+	handelsetabeller.svartkonstsammanslutningar[95].beskrivning = "Rollpersonen har en stor mängd udda kunskaper."
+	handelsetabeller.svartkonstsammanslutningar[95].beskrivninghak = "4 poäng Expertiser"
+	handelsetabeller.svartkonstsammanslutningar[95].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[95].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[95].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[95].subval[0][0][0].expertispoang = 4; 
+
+	handelsetabeller.svartkonstsammanslutningar[96] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[96].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[96].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[96].rubrik = "Undersökt mystisk plats"
+	handelsetabeller.svartkonstsammanslutningar[96].beskrivning = "Rollpersonen har undersökt en mystisk plats. Det kan vara ett högmagiskt område, en bortglömd ruin eller en förtrollad glänta. Rollpersonen fylldes med insikt och hittade någon typ av föremål som är mycket värdefullt om man kan hitta rätt köpare."
+	handelsetabeller.svartkonstsammanslutningar[96].beskrivninghak = "Välj mellan 4 enheter Kunskapsfärdigheter och 4 enheter Mystikfärdigheter. Rollpersonen har även ett mystiskt föremål som är värt 4T6×50 silver om man hittar rätt köpare"
+	handelsetabeller.svartkonstsammanslutningar[96].beskrivninghakvaldbas = "";
+	
+	handelsetabeller.svartkonstsammanslutningar[96].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[96].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[96].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[96].subval[0][0][0].resurs="Ett mystiskt föremål som är värt varde1_resultat om man hittar rätt köpare";
+	handelsetabeller.svartkonstsammanslutningar[96].subval[0][0][0].vardeslag=["4T6x50"];
+	handelsetabeller.svartkonstsammanslutningar[96].subval[0][0][0].beskrivninghakvaldbas="Föremålet är värt varde1_resultat om man hittar rätt köpare.";
+	
+	
+	handelsetabeller.svartkonstsammanslutningar[96].subval[0].push([]);
+	handelsetabeller.svartkonstsammanslutningar[96].subval[0][1][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[96].subval[0][1][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[96].subval[0][1][0].vald = 0; 
+	
+	handelsetabeller.svartkonstsammanslutningar[96].subval[0][1][0].antalsubval=1;
+	
+	handelsetabeller.svartkonstsammanslutningar[96].subval[0][1][1] = {};
+	handelsetabeller.svartkonstsammanslutningar[96].subval[0][1][1].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[96].subval[0][1][1].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[96].subval[0][1][1].kunskapsfardigheterenheter=4;
+	handelsetabeller.svartkonstsammanslutningar[96].subval[0][1][1].rubrik="4 enheter Kunskapsfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[96].subval[0][1][1].beskrivninghakvaldbas="4 enheter Kunskapsfärdigheter. "
+	
+	handelsetabeller.svartkonstsammanslutningar[96].subval[0][1][2] = {};
+	handelsetabeller.svartkonstsammanslutningar[96].subval[0][1][2].valdasub = [];
+	handelsetabeller.svartkonstsammanslutningar[96].subval[0][1][2].vald = 0;
+	handelsetabeller.svartkonstsammanslutningar[96].subval[0][1][2].mystikfardigheterenheter=4;
+	handelsetabeller.svartkonstsammanslutningar[96].subval[0][1][2].rubrik="4 enheter Mystikfärdigheter"	
+	handelsetabeller.svartkonstsammanslutningar[96].subval[0][1][2].beskrivninghakvaldbas="4 enheter Mystikfärdigheter. "	
+	
+
+	handelsetabeller.svartkonstsammanslutningar[97] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[97].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[97].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[97].rubrik = "Utskrattad"
+	handelsetabeller.svartkonstsammanslutningar[97].beskrivning = "Rollpersonen har blivit utskrattad av sin gruppering i samhället. I det område där denne kommer från så ser man på denne med förakt och skrattar åt denne bakom ryggen. Det kan vara något som denne gjort av misstag eller något som denne blivit utsatt för. Att söka upprättelse för detta skulle göra mycket för dennes heder."
+	handelsetabeller.svartkonstsammanslutningar[97].beskrivninghak = "2 Avtrubbningskryss för utsatthet"
+	handelsetabeller.svartkonstsammanslutningar[97].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[97].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[97].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[97].subval[0][0][0].avtrubbningutsatthet = 2; 
+	handelsetabeller.svartkonstsammanslutningar[97].subval[0][0][0].ovrigt="Har blivit utskrattad."
+
+	handelsetabeller.svartkonstsammanslutningar[98] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[98].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[98].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[98].rubrik = "Välutbildad"
+	handelsetabeller.svartkonstsammanslutningar[98].beskrivning = "Rollpersonen har spenderat en lång tid i studier och är numera både välutbildad och kunnig."
+	handelsetabeller.svartkonstsammanslutningar[98].beskrivninghak = "\+3 Visdom. 4 enheter Kunskapsfärdigheter"
+	handelsetabeller.svartkonstsammanslutningar[98].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[98].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[98].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[98].subval[0][0][0].kunskapsfardigheterenheter = 4; 
+	handelsetabeller.svartkonstsammanslutningar[98].subval[0][0][0].visdom = {};
+	handelsetabeller.svartkonstsammanslutningar[98].subval[0][0][0].visdom.varde =3; 
+
+	handelsetabeller.svartkonstsammanslutningar[99] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[99].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[99].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[99].rubrik = "Vän med väsen"
+	handelsetabeller.svartkonstsammanslutningar[99].beskrivning = "Rollpersonen har en vänskap med ett övernaturligt väsen som många skulle se på med fruktan eller förakta. Det kan vara ett troll, en sagitaur, en lamia, ett spöke, ett skuggväsen eller något annat som ses som övernaturligt. Exakt hur vänskapen uppstod är upp till spelaren men denne har nu en förståelse för liknande väsen och drar sig från att skada dessa."
+	handelsetabeller.svartkonstsammanslutningar[99].beskrivninghak = "\+1 Vilja, \+2 Visdom. 3 valfria enheter som denne lärt sig av väsendet"
+	handelsetabeller.svartkonstsammanslutningar[99].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[99].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[99].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[99].subval[0][0][0].valfriaenheter=3; 
+	handelsetabeller.svartkonstsammanslutningar[99].subval[0][0][0].vilja = {};
+	handelsetabeller.svartkonstsammanslutningar[99].subval[0][0][0].vilja.varde =1; 
+	handelsetabeller.svartkonstsammanslutningar[99].subval[0][0][0].visdom = {};
+	handelsetabeller.svartkonstsammanslutningar[99].subval[0][0][0].visdom.varde =2; 
+
+	handelsetabeller.svartkonstsammanslutningar[100] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[100].subval = [[[]]]; 
+	handelsetabeller.svartkonstsammanslutningar[100].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[100].rubrik = "Händelserikt liv"
+	handelsetabeller.svartkonstsammanslutningar[100].beskrivning = "Rollpersonen har haft ett händelserikt liv."
+	handelsetabeller.svartkonstsammanslutningar[100].beskrivninghak = "1 extra slag på valfri händelsetabell och slå dessutom om detta slag"
+	handelsetabeller.svartkonstsammanslutningar[100].subval[0][0][0] = {}; 
+	handelsetabeller.svartkonstsammanslutningar[100].subval[0][0][0].valdasub = []; 
+	handelsetabeller.svartkonstsammanslutningar[100].subval[0][0][0].vald = 0; 
+	handelsetabeller.svartkonstsammanslutningar[100].subval[0][0][0].valfriatabellslag=1;
+
+	
+	
+	for (i=1; i< handelsetabeller.svartkonstsammanslutningar.length; i++){
+		handelsetabeller.svartkonstsammanslutningar[i].tabellnamn = "Kunskap \& mysterier";
+		handelsetabeller.svartkonstsammanslutningar[i].typ = "handelsetabellslag";
+		handelsetabeller.svartkonstsammanslutningar[i].aktiverad=0;
+		
+		if ("beskrivningvaldbas" in handelsetabeller.svartkonstsammanslutningar[i]){
+			
+		}else{
+			handelsetabeller.svartkonstsammanslutningar[i].beskrivningvaldbas=handelsetabeller.svartkonstsammanslutningar[i].beskrivning;
+		}
+		
+		if ("beskrivninghakvaldbas" in handelsetabeller.svartkonstsammanslutningar[i]){
+			
+		}else{
+			handelsetabeller.svartkonstsammanslutningar[i].beskrivninghakvaldbas=handelsetabeller.svartkonstsammanslutningar[i].beskrivninghak;
+		}
+		
+		if ("nummer" in handelsetabeller.svartkonstsammanslutningar[i]){
+			
+		}else{
+			handelsetabeller.svartkonstsammanslutningar[i].nummer=i;
+		}
+	}
+    
+	
+	
+	
+    // --- //
+    
+
     /*
     
     for (m=0; m < handelsetabellista.length; m++){
